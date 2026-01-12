@@ -50,6 +50,7 @@ public class ProgramBatchSteps {
 	        /*************************status code validation********************************/
 			int actualStatusCode = response.getStatusCode();
 			Assert.assertEquals(actualStatusCode, batchrequest.getStatusCode(), "Status code does not match!");
+			
 			/*************************status Text validation********************************/
 			String expectedStatusText = batchrequest.getStatusText();
 			CommonUtils.validateResponseMessage(expectedStatusText,actualStatusCode,scenario,response);

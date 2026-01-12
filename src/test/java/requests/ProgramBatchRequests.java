@@ -25,6 +25,7 @@ public class ProgramBatchRequests extends CommonUtils {
     private Map<String, String> currentRow;
     private ProgramBatchPojo batch;
     private Response response;
+   // private String token ="";
 
     private static final String INVALID_Batch_ID = "405";
     private static final String INVALID_TOKEN = "njbsjkbfk";
