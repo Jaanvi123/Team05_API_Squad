@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.text.ParseException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
-//import api.Utility.CommonUtils;
-//import api.requests.ProgramRequests;
+import utilities.CommonUtils;
+import requests.ProgramRequest;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -16,30 +16,33 @@ import io.restassured.specification.RequestSpecification;
 
 public class ProgramStepDefinition {
 
-//	ProgramRequests programrequest = new ProgramRequests();
+	ProgramRequest programrequest = new ProgramRequest();
 	private RequestSpecification requestSpec;
-	private Response response;
+	private Response response; 
 	
-	/*@Given("Admin set Authorization to Bearer token")
+	@Given("Admin set Authorization to Bearer token")
 	public void admin_set_authorization_to_bearer_token() {
 		requestSpec = programrequest.setAuth();
-	}*/
+		
+	}
 
 	@Given("Admin creates Post Request for the LMS with request body {string}")
 	public void admin_creates_post_request_for_the_lms_with_request_body(String scenario) 
 			throws IOException, InvalidFormatException, ParseException {
-	//			programrequest.createProgram(scenario);
-	//			requestSpec = programrequest.buildRequest(requestSpec);
+			programrequest.createProgram(scenario);
+			requestSpec = programrequest.buildRequest(requestSpec);
 	}
 
 	@When("Admin sends Post HTTPS Request and request Body with endpoint")
 	public void admin_sends_post_https_request_and_request_body_with_endpoint() {
-	  
+			response = programrequest.sendRequest(requestSpec);
 	}
 
 	@Then("Admin receives StatusCode with statusText {string}")
-	public void admin_receives_status_code_with_status_text(String string) {
-	 
+	public void admin_receives_status_code_with_status_text(String scenario) {
+		if (response == null) {
+			throw new AssertionError("Response is null. API call might have failed.");
+		}
 	}
 
 	@Given("Admin creates Put Request for the LMS with request body {string}")
