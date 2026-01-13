@@ -1,4 +1,4 @@
-package hooks;
+package stepDefinitions;
 
 <<<<<<< HEAD
 import io.cucumber.java.Before; 

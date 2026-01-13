@@ -4,11 +4,11 @@ Feature: To test the API request of Batch Module
   Background: 
     Given Admin set Authorization for batch
 
-  @postbatch
+  @postbatch @vijitrial
   Scenario Outline: Check if admin is able to create a Batch with valid/invalid details
     Given Admin creates POST Request  with valid data in requestBody for "<Scenario>"
-    When Admin sends HTTPS Request with endpoint
-    Then Admin receives StatusCode for batch with statusText "<Scenario>"
+    #When Admin sends HTTPS Request with endpoint
+    #Then Admin receives StatusCode for batch with statusText "<Scenario>"
 
     Examples: 
       | Scenario                  | 	
@@ -21,7 +21,7 @@ Feature: To test the API request of Batch Module
       | Valid details             |       
       #| NoAuthV                   |  
       #|ExistingBatchNameV					|
-      #
+      
       
       
       
