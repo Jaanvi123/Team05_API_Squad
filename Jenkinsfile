@@ -8,7 +8,7 @@ pipeline {
     
     // Define team emails as environment variables
     environment {
-        TEAM_EMAILS = 'vijayashree80sv@gmail.com'
+        TEAM_EMAILS = 'vijayashree80sv@gmail.com,s.yogini@gmail.com,pramodini.patil182@gmail.com,Jmattalwar@gmail.com,prasannarahavi14@gmail.com,rajaya423@gmail.com'
         PROJECT_NAME = 'Team05_APISquad - LMS API Testing'
     }
     
