@@ -2,13 +2,11 @@ package utilities;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.ResourceBundle;
-
-import utilities.ExcelUtils;
+//import utilities.ExcelUtils;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -17,11 +15,12 @@ public class CommonUtils {
 
 	public static List<Map<String, String>> excelData;
 	public static Map<String, String> currentRow;
+
 	public static ResourceBundle endpoints = ResourceBundle.getBundle("config");
 	public static String baseURI = endpoints.getString("baseUrl");
 	public static String filePath = endpoints.getString("excelPath");
 	
-	
+
 	public static Map<String, String> getCurrentRow(String scenario,String sheetName){
 		try {
 				excelData = ExcelUtils.readExcelData(filePath, sheetName);
