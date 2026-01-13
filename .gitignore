@@ -2,12 +2,11 @@
 .classpath
 .project
 .settings/
-.classpath
-.classpath
-.classpath
-.project
-.settings/
 test-output/
 .classpath
 .settings/
 .project
+src/test/java/runner/TestRunner.java
+src/test/java/hooks/Hooks.java
+pom.xml
+testng.xml
