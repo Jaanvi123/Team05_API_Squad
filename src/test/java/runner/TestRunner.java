@@ -15,13 +15,13 @@ import io.cucumber.testng.CucumberOptions;
 				},
 		monochrome=false,  //console output color
 		features = {"src/test/resources/features" },
-		glue= {"api.StepDefinitions"},
+		glue= {"stepDefinitions", "hooks"},
 		dryRun = false
 		//tags = "@putClassDetails or @loginPost"		
 		
 		)
 
-public class Runner extends AbstractTestNGCucumberTests{
+public class TestRunner extends AbstractTestNGCucumberTests{
 	
 	@Override
     @DataProvider(parallel = false)

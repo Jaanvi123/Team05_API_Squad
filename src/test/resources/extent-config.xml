@@ -1,0 +1,5 @@
+<extent>
+    <reporter>
+        <spark out="target/spark.html" />
+    </reporter>
+</extent>

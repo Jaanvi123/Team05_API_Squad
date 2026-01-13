@@ -15,9 +15,12 @@ public class CommonUtils {
 
 	public static List<Map<String, String>> excelData;
 	public static Map<String, String> currentRow;
-	public static ResourceBundle config = ResourceBundle.getBundle("endpoint");
-	public static String baseURI = config.getString("baseUrl");
-	public static String filePath = config.getString("excelPath");
+
+	public static ResourceBundle endpoints = ResourceBundle.getBundle("config");
+	public static String baseURI = endpoints.getString("baseUrl");
+	public static String filePath = endpoints.getString("excelPath");
+	
+
 	public static Map<String, String> getCurrentRow(String scenario,String sheetName){
 		try {
 				excelData = ExcelUtils.readExcelData(filePath, sheetName);
@@ -34,6 +37,8 @@ public class CommonUtils {
 			throw new RuntimeException("Failed to read Excel file.", e);
 		}
 	}
+	
+	
 	public static Response getResponse(RequestSpecification requestSpec, String endpoint) {
 		if (requestSpec == null || currentRow == null) {
 			throw new IllegalStateException("Request or currentRow is not initialized.");
