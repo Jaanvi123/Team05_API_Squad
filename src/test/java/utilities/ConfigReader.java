@@ -21,7 +21,7 @@ public class ConfigReader {
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-            throw new RuntimeException("config.properties not found at " + "src/test/resources/Config/Config.properties");
+            throw new RuntimeException("config.properties not found at " + "src/test/resources/config.properties");
         }
     }
 
