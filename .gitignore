@@ -3,4 +3,7 @@
 .project
 .settings/
 test-output/
+allure-results/
+ExtentReport/
+Team5APISquadLog.txt
 
