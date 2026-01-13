@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
@@ -28,8 +29,13 @@ public class UserRequest extends CommonUtils {
 		private static final int INVALID_PROGRAM_NAME = 4567;
 		private static final String INVALID_TOKEN = "jbnsjokfi";
 	    
+
+		
+	
+			
+		
 		public RequestSpecification setAuth() {
-			RestAssured.baseURI = config.getString("baseUrl");
+			RestAssured.baseURI = CommonUtils.endpoints.getString("baseUrl");
 			return given()
 					.header("Authorization", "Bearer " + TokenManager.getToken());
 		}
@@ -61,7 +67,7 @@ public class UserRequest extends CommonUtils {
 						.header("Authorization", "Bearer " + INVALID_TOKEN);
 			}
 			else if(scenarioName.contains("InvalidBaseURI")) {
-				RestAssured.baseURI = config.getString("invalidBaseUrl");
+				RestAssured.baseURI = CommonUtils.endpoints.getString("invalidBaseUrl");
 				return given()
 						.header("Authorization", "Bearer " + TokenManager.getToken());
 			}

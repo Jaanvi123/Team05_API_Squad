@@ -51,7 +51,7 @@ public class UserPayload extends CommonUtils {
             }
 
             // Handle nested UserLogin (if ExceUserPojol has login data)
-            if (currentRow.containsKey("userLoginEmail") && currentRow.containsKey("loginStatus")) {
+            if (currentRow.containsKey("userLoginEmail") && currentRow.containsKey("loginStatus") && currentRow.containsKey("status")) {
             	UserPojo.UserLogin userLogin = new UserPojo.UserLogin();
                 userLogin.setUserLoginEmail(currentRow.get("userLoginEmail"));
                 userLogin.setLoginStatus(currentRow.get("loginStatus"));
