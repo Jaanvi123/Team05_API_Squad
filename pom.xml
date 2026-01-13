@@ -51,12 +51,12 @@
 			<version>5.5.6</version>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+		<!-- Source: https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
 		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>json-schema-validator</artifactId>
-			<version>5.5.6</version>
+		    <groupId>io.rest-assured</groupId>
+		    <artifactId>json-schema-validator</artifactId>
+		    <version>6.0.0</version>
+		    <scope>compile</scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -103,22 +103,24 @@
 			<version>7.28.2</version>
 		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
-			<version>2.25.3</version>
-		</dependency>
 
-		<!--
-		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>2.25.3</version>
-		</dependency>
 		
+		<!-- Source: https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-api</artifactId>
+		    <version>2.0.17</version>
+		    <scope>compile</scope>
+		</dependency>
+				
+		
+		<!-- Source: https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-simple</artifactId>
+		    <version>2.0.17</version>
+		    <scope>test</scope>
+		</dependency>
 		
 		<!-- Source: https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
@@ -127,6 +129,23 @@
 		    <version>1.18.42</version>
 		    <scope>compile</scope>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
+		<dependency>
+		    <groupId>org.hamcrest</groupId>
+		    <artifactId>hamcrest</artifactId>
+		    <version>3.0</version>
+		    <scope>test</scope>
+		</dependency>
+			
+		
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber7-adapter</artifactId>
+			<version>1.14.0</version>
+		</dependency>
+		
+		
 
 	</dependencies>
 

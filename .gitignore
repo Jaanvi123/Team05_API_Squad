@@ -8,3 +8,6 @@
 .project
 .settings/
 test-output/
+.classpath
+.settings/
+.project
