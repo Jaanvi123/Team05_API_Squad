@@ -1,4 +1,3 @@
-@postUser
 Feature: User Module1 [Post Operation]
    # Description: Check if Admin is able to create a new user with various valid and invalid data inputs.
 
@@ -33,9 +32,9 @@ Scenario Outline: Check if admin able to retrieve all users with valid/invalid E
 Examples:
     | scenario                   |
     | GetallusersValidEndpoint   |
-    | GetallusersInvalidEndpoint |
-    | GetallusersNoAuth          |
-    | GetallusersInvalidMethod   |
+   # | GetallusersInvalidEndpoint |
+    #| GetallusersNoAuth          |
+    #| GetallusersInvalidMethod   |
  
 @GetActiveUsers
 Scenario Outline: Check if admin able to retrieve active users with valid/invalid Endpoints

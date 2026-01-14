@@ -22,7 +22,8 @@ public class UserPayload extends CommonUtils {
             throws IOException, ParseException, InvalidFormatException {
         
         currentRow = CommonUtils.getCurrentRow(scenario, sheetName);
-        Map<String, Object> userDetails = new HashMap<String, Object>();
+      //  Map<String, Object> userDetails = new HashMap<String, Object>();
+        HashMap<String, Object> userDetails = new HashMap<String, Object>();
         UserPojo userPojo = null;
 
         if (!scenario.contains("Get")) {
@@ -56,7 +57,7 @@ public class UserPayload extends CommonUtils {
                 userLogin.setUserLoginEmail(currentRow.get("userLoginEmail"));
                 userLogin.setLoginStatus(currentRow.get("loginStatus"));
                 userLogin.setStatus(currentRow.get("status"));
-                userPojo.setUserLogin(currentRow.get("userLogin"));
+                userPojo.setUserLogin(userLogin); 
             }
         }
 

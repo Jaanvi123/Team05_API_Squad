@@ -3,6 +3,7 @@ package pojo;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class UserPojo {
 	  @JsonProperty("userComments")
@@ -64,11 +65,13 @@ public class UserPojo {
 	    
 	    @JsonProperty("userVisaStatus")
 	    private String userVisaStatus;
+	//solution1:    
+	 //   @JsonProperty("userLogin")
+	//    private String userLogin;
+	//solution 2:   // @JsonProperty("userLogin")
+	   // private UserLogin userLogin;
 	    
-	    @JsonProperty("userLogin")
-	    private String userLogin;
-	    
-	    public static class UserLogin {
+	  public static class UserLogin {
 	        @JsonProperty("userLoginEmail")
 	        private String userLoginEmail;
 	        
@@ -79,7 +82,19 @@ public class UserPojo {
 	        private String status;
 	        
 	        public UserLogin() {}
+	       
+	        public UserLogin(String jsonString) throws Exception {
+	            ObjectMapper mapper = new ObjectMapper();
+	            UserLogin temp = mapper.readValue(jsonString, UserLogin.class);
+	            this.userLoginEmail = temp.userLoginEmail;
+	            this.loginStatus = temp.loginStatus;
+	            this.status = temp.status;
+	        
+	        }
+	  
 
+
+	 
 	        public String getUserLoginEmail() { 
 	        	return userLoginEmail; 
 	        	}
@@ -154,10 +169,10 @@ public class UserPojo {
 	    	return userVisaStatus; 
 	    	}    
 	    
-	    public String getUserLogin() { 
-	    	return userLogin; 
-	    	}
-	    
+	 //   public String getUserLogin() { 
+	    //	return userLogin; 
+	    	//}
+	    public UserLogin getUserLogin() { return userLogin; }
 	    
 	    //Setter Method
 	    
@@ -209,10 +224,10 @@ public class UserPojo {
 	    	this.userVisaStatus = userVisaStatus; 
 	    	}
 	    
-	    public void setUserLogin(String userLogin) { 
-	    	this.userLogin = userLogin; 
-	    	}
-
+	  //  public void setUserLogin(String userLogin) { 
+	    //	this.userLogin = userLogin; 
+	    	//}
+	    public void setUserLogin(UserLogin userLogin) { this.userLogin = userLogin; }
 	}
 
 

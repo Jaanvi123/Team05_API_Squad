@@ -36,6 +36,7 @@ public class UserRequest extends CommonUtils {
 		
 		public RequestSpecification setAuth() {
 			RestAssured.baseURI = CommonUtils.endpoints.getString("baseUrl");
+			TokenManager.setToken("");
 			return given()
 					.header("Authorization", "Bearer " + TokenManager.getToken());
 		}
@@ -58,6 +59,8 @@ public class UserRequest extends CommonUtils {
 			if (requestSpec == null) {
 				throw new IllegalStateException("RequestSpecification is not initialized.");
 			}
+			
+			if (currentRow == null) { throw new IllegalStateException("currentRow is null. Did you forget to call createUser(scenario)?"); }
 			String scenarioName = currentRow.get("ScenarioName");
 			if(scenarioName.contains("NoAuth")) {
 				requestSpec = given();
