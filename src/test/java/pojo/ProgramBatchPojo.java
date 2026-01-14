@@ -2,10 +2,12 @@ package pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor; 
 import lombok.Data;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class ProgramBatchPojo {
 	
 	@JsonProperty("batchDescription")
@@ -13,15 +15,12 @@ public class ProgramBatchPojo {
     @JsonProperty("batchName")
     private String batchName;
     @JsonProperty("batchNoOfClasses")
-    private String batchNoOfClasses;
+    private int batchNoOfClasses;
     @JsonProperty("batchStatus")
     private String batchStatus;
     @JsonProperty("programId")
-    private String programId;
-    @JsonProperty("programName")
-    private String programName;
-
-    public ProgramBatchPojo(String batchName, String batchStatus) {
-    }
+    private int programId;   
+    
+   
 
 }

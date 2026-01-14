@@ -1,34 +1,71 @@
 package stepDefinitions;
 
+import java.io.IOException;
+import java.text.ParseException;
+
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.junit.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import requests.UserRequest;
 
 public class Usermodulesteps1 {
 	
-	
+	private UserRequest userRequest;
+    private RequestSpecification requestSpec;
+    private Response response;
 	
 	@Given("Admin sets Bearer token")
 	public void admin_sets_bearer_token() {
 	    
-	    
+		// Initialize UserRequest and set base URI + token
+        userRequest = new UserRequest();
+        requestSpec = userRequest.setAuth();
 	}
 
 	@Given("Admin creates POST Request for the LMS API endpoint with data from Excel {string}")
-	public void admin_creates_post_request_for_the_lms_api_endpoint_with_data_from_excel(String string) {
+	public void admin_creates_post_request_for_the_lms_api_endpoint_with_data_from_excel(String scenario) throws InvalidFormatException, IOException, ParseException {
 	   
-	 
+		// Load data from Excel and populate userPojo + currentRow
+        userRequest.createUser(scenario);
+
+        // Build the final RequestSpecification (headers, body, negative cases logic)
+        requestSpec = userRequest.buildRequest(requestSpec);
 	}
 
-	@When("Admin sends HTTPS Request and request Body")
-	public void admin_sends_https_request_and_request_body() {
-	  
+	@When("Admin sends HTTPS Request and request Body for user1")
+	public void admin_sends_https_request_and_request_body_for_user1() {
+		// Send request using endpoint from Excel currentRow
+        response = userRequest.sendRequest(requestSpec);
+        // Optionally store response body details
+        userRequest.saveResponseBody(response);
 	}
 
 	@Then("Admin receives StatusCode and response body for {string}")
-	public void admin_receives_status_code_and_response_body_for(String string) {
-	   
-	}
+	public void admin_receives_status_code_and_response_body_for(String scenario) {
+		// Expected status code from Excel
+        int expectedStatusCode = userRequest.getStatusCode();
+        Assert.assertEquals(
+                "Status code mismatch for scenario: " + scenario,
+                expectedStatusCode,
+                response.getStatusCode()
+        );
+        // Optionally validate status text/message from Excel if applicable
+        String expectedStatusText = userRequest.getStatusText();
+        if (expectedStatusText != null) {
+            String actualStatusText = response.jsonPath().getString("status"); // adjust JSON path
+            Assert.assertEquals(actualStatusText, expectedStatusText,
+                    "Status text mismatch for scenario: " + scenario);
+        }
+
+        // You can also add JSON schema or field-level assertions here
+        // CommonUtils.validateResponseSchema(response, schemaPath);
+    }
+
+	
 
 	@Given("Admin creates get request \\(all users) Request for the LMS API with {string}")
 	public void admin_creates_get_request_all_users_request_for_the_lms_api_with(String string) {
