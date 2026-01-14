@@ -9,7 +9,7 @@ import java.util.Map;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
-import api.commons.Commons;
+import commons.Commons;
 import utilities.TokenManager;
 import payload.ProgramBatchPayload;
 import pojo.ProgramBatchPojo;
@@ -32,6 +32,7 @@ public class ProgramBatchRequests extends CommonUtils {
     
     
     public RequestSpecification setAuth(){
+    	System.out.println("Base URI is: "+endpoints.getString("baseUrl")+" and Token is: "+TokenManager.getToken());
         RestAssured.baseURI = endpoints.getString("baseUrl");
         return given()
                 .header("Authorization", "Bearer " + TokenManager.getToken());
@@ -45,12 +46,19 @@ public class ProgramBatchRequests extends CommonUtils {
             if(batchDetails !=null) {
                if(batchDetails.get("batch") !=null) {
                 this.batch = (ProgramBatchPojo)  batchDetails.get("batch");
-            }
+               }
             if(batchDetails.get("currentRow") !=null) {
                 this.currentRow = (Map<String, String>) batchDetails.get("currentRow");
+               }
             }
+            
+         // Validate batch was created
+            if (this.batch == null) {
+                throw new RuntimeException("Batch object is null for scenario: " + scenario);
             }
         }
+    
+    
     
     
     
@@ -79,18 +87,18 @@ public class ProgramBatchRequests extends CommonUtils {
 	}
 
 	public String getStatusText() {
-		String scenarioName = currentRow.get("ScenarioName");
-		if(!scenarioName.equalsIgnoreCase("Invalid Endpoint")&&
-				(!scenarioName.equalsIgnoreCase("Mandatory"))
-				&&(!scenarioName.equalsIgnoreCase("Full Details")))
-		{
+//		String scenarioName = currentRow.get("ScenarioName");
+//		if(!scenarioName.equalsIgnoreCase("Invalid Endpoint")&&
+//				(!scenarioName.equalsIgnoreCase("Mandatory"))
+//				&&(!scenarioName.equalsIgnoreCase("Full Details")))
+//		{
 			String expectedStatusText = currentRow.get("StatusText");
 			return expectedStatusText;
-		}
-		else
-		{
-			return null;
-		}
+//		}
+//		else
+//		{
+//			return null;
+//		}
 	}
 	
 	
