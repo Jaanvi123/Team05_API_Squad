@@ -1,22 +1,15 @@
 package stepDefinitions;
 
-<<<<<<< HEAD
-import io.cucumber.java.Before; 
-import io.cucumber.java.After; 
 
-
-=======
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintStream;
-
-import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
->>>>>>> a86dd963175f671eeaf4e8fcf135275993492c6c
+import java.io.PrintStream;
+import io.cucumber.java.After;
+import java.io.FileOutputStream;
 
 public class Hooks {
 	

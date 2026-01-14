@@ -7,8 +7,9 @@ import lombok.Data;
 @Data
 public class ProgramBatchDescriptionStoragePojo {
 	
-	 String batchName;
+	    String batchName;
 	    String batchDescription;
 	    String batchNoOfClasses;
-
+	    
+	
 }

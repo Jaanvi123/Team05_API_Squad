@@ -2,9 +2,9 @@ package commons;
 
 public class Commons {
 	
-	private static int programId;
+	private static int programId = 13;
 	private static String programName;
-	private static float batchId = 42;
+	private static float batchId;
 	private static String batchName;
 	private static String userId;
 		
