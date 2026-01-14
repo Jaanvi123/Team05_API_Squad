@@ -7,7 +7,7 @@ Given Admin has valid Bearer token
 @GETuserbyProgramID
 Scenario Outline: Check if Admin is able to retrieve user with valid/invalid Program ID
     Given Admin creates GET Request with valid or invalid Program Id for "<Scenario>"
-    When Admin sends HTTPS Request with endpoint
+    When Admin sends HTTPS user Request with endpoint
     Then Admin receives StatusCode with statusText
     Examples:
       |Scenario|
@@ -17,8 +17,8 @@ Scenario Outline: Check if Admin is able to retrieve user with valid/invalid Pro
   
 @GETuserbyRoleID
 Scenario Outline: Check if Admin is able to retrieve user with valid/invalid Role ID
-    Given Admin creates GET Request with valid/invalid Role ID for "<Scenario>"
-    When Admin sends HTTPS Request with endpoint
+    Given Admin creates GET Request with valid or invalid Role ID for "<Scenario>"
+    When Admin sends HTTPS user Request with endpoint
     Then Admin receives StatusCode with statusText
     Examples:
       |Scenario|
@@ -28,8 +28,8 @@ Scenario Outline: Check if Admin is able to retrieve user with valid/invalid Rol
  
 @GETuserbyRoleIDV2
 Scenario Outline: Check if Admin is able to retrieve user with valid/invalid Role ID V2
-    Given Admin creates GET Request with valid/invalid Role ID V2 for "<Scenario>"
-    When Admin sends HTTPS Request with endpoint
+    Given Admin creates GET Request with valid or invalid Role ID V2 for "<Scenario>"
+    When Admin sends HTTPS user Request with endpoint
     Then Admin receives StatusCode with statusText
     Examples:
       |Scenario|
@@ -50,8 +50,8 @@ Scenario Outline: Check if Admin is able to retrieve users batchid with valid/in
       
 @GETuserdetailsbyID
 Scenario Outline: Check if Admin is able to retreive user details by ID
-    Given Admin creates GET Request with valid/invalid User ID for "<Scenario>"
-    When Admin sends HTTPS Request with endpoint
+    Given Admin creates GET Request with valid or invalid User ID for "<Scenario>"
+    When Admin sends HTTPS user Request with endpoint
     Then Admin receives StatusCode with statusText
     Examples:
       |Scenario|
@@ -62,7 +62,7 @@ Scenario Outline: Check if Admin is able to retreive user details by ID
 @PUTupdateuser
 Scenario Outline: Check if Admin is able to update user details for existing User ID
     Given Admin creates PUT Request to update user details for existing User ID for "<Scenario>"
-    When Admin sends HTTPS Request and request Body
+    When Admin sends HTTPS user Request with endpoint
     Then Admin receives StatusCode with statusText
     Examples:
       |Scenario|
@@ -75,7 +75,7 @@ Scenario Outline: Check if Admin is able to update user details for existing Use
 @PUTupdateuserRoleID
 Scenario Outline: Check if Admin is able to update user Role ID for existing User ID
     Given Admin creates PUT Request to update user Role ID for existing User ID for "<Scenario>"
-    When Admin sends HTTPS Request and request Body
+    When Admin sends HTTPS user Request with endpoint
     Then Admin receives StatusCode with statusText
     Examples:
       |Scenario|  
@@ -86,7 +86,7 @@ Scenario Outline: Check if Admin is able to update user Role ID for existing Use
 @PUTuserRoleProgrambatchstatus
 Scenario Outline: Check if Admin is able to assign User Role to Program/Batch
     Given Admin creates PUT Request to assign User Role to Program/Batch for "<Scenario>"
-    When Admin sends HTTPS Request and request Body
+    When Admin sends HTTPS user Request with endpoint
     Then Admin receives StatusCode with statusText
     Examples:
       |Scenario|
@@ -98,7 +98,7 @@ Scenario Outline: Check if Admin is able to assign User Role to Program/Batch
 @PUTuserLoginStatus
 Scenario Outline: Check if Admin is able to update User Login Status 
     Given Admin creates PUT Request to to update User Login Status for "<Scenario>"
-    When Admin sends HTTPS Request and request Body
+    When Admin sends HTTPS user Request with endpoint
     Then Admin receives StatusCode with statusText
     Examples: 
       |Scenario|
@@ -108,8 +108,8 @@ Scenario Outline: Check if Admin is able to update User Login Status
       
 @DELETEuser
 Scenario Outline: Check if Admin is able to delete Valid/Invalid UserID 
-    Given Admin creates DELETE Request with Valid/Invalid UserID for "<Scenario>"
-    When Admin sends HTTPS Request and request Body
+    Given Admin creates DELETE Request with valid or invalid UserID for "<Scenario>"
+    When Admin sends HTTPS user Request with endpoint
     Then Admin receives StatusCode with statusText
     Examples: 
       |Scenario|
