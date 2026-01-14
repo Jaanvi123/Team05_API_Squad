@@ -1,12 +1,14 @@
-package hooks;
+package stepDefinitions;
+
+
+
+import io.cucumber.java.Before; 
+import io.cucumber.java.After; 
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
-
-import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
-import io.cucumber.java.Before;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -45,4 +47,15 @@ public class Hooks {
 		}
 	}
 
+	@Before public void setup() 
+	{ 		
+	System.out.println("----- Test Execution Started -----");
+		}
+	
+	
+	@After public void tearDown() 
+	{ 
+		System.out.println("----- Test Execution Completed -----"); 
+	} 
+	
 }

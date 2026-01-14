@@ -4,24 +4,28 @@ Feature: To test the API request of Batch Module
   Background: 
     Given Admin set Authorization for batch
 
-  @postbatch
+  @postbatch @vijitrial
   Scenario Outline: Check if admin is able to create a Batch with valid/invalid details
-    Given Admin creates POST Request  with valid data in requestBody for "<Scenario>"
-    When Admin sends HTTPS Request with endpoint
+    Given Admin creates Batch POST Request  with valid data in requestBody for "<Scenario>"
+    When Admin sends Batch HTTPS Request with endpoint
     Then Admin receives StatusCode for batch with statusText "<Scenario>"
 
     Examples: 
       | Scenario                  | 	
-      #| Existing batch Number     |
-      #| MissingMandatoryField     |
-      #| Invalid endpoint          |
-      #| Inactive progId           |
-      #| Invalid data              |
-      #| Missing additional fields |
+      | Existing batch Name       |
+      | InvalidBatchNameFormat		|
+      |MissingBatchName           |
+      |SequenceMoreThan99         |
+      |NegativeClasses						|
+      |InvalidStatus							|
+      | MissingMandatoryField     |
+      | Invalid endpoint          |
+      | Inactive progId           |
+      | Invalid data              |
+      | Missing additional fields |
       | Valid details             |       
       #| NoAuthV                   |  
-      #|ExistingBatchNameV					|
-      #
+      
       
       
       

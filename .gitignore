@@ -2,12 +2,8 @@
 .classpath
 .project
 .settings/
-.classpath
-.classpath
-.classpath
-.project
-.settings/
 test-output/
-.classpath
-.settings/
-.project
+allure-results/
+ExtentReport/
+Team5APISquadLog.txt
+

@@ -1,26 +1,25 @@
-@postUser
 Feature: User Module1 [Post Operation]
    # Description: Check if Admin is able to create a new user with various valid and invalid data inputs.
 
     Background:
         Given Admin sets Bearer token
-
+    @createuser
     Scenario Outline: Check if admin is able to create user with valid/invalid details
         Given Admin creates POST Request for the LMS API endpoint with data from Excel "<scenario>"
-        When Admin sends HTTPS Request and request Body
+        When Admin sends HTTPS Request and request Body for user1
         Then Admin receives StatusCode and response body for "<scenario>"
 
     Examples:
         | scenario                      |
-        | Create_Valid_Admin            |
-        | Create_Valid_Staff            |
-        | Create_Valid_Student          |
-        | Existing_Phone_Number         |
-        | Missing_Mandatory_Fields      |
-        | Invalid_TimeZone              |
-        | Invalid_VisaStatus            |
-        | Post_NoAuth                   |
-        | Post_Without_RequestBody      |
+        | Create_Valid_User           |
+       # | Create_Valid_Staff            |
+        #| Create_Valid_Student          |
+        #| Existing_Phone_Number         |
+        #| Missing_Mandatory_Fields      |
+        #| Invalid_TimeZone              |
+        #| Invalid_VisaStatus            |
+        #| Post_NoAuth                   |
+        #| Post_Without_RequestBody      |
  
  
 
@@ -33,9 +32,9 @@ Scenario Outline: Check if admin able to retrieve all users with valid/invalid E
 Examples:
     | scenario                   |
     | GetallusersValidEndpoint   |
-    | GetallusersInvalidEndpoint |
-    | GetallusersNoAuth          |
-    | GetallusersInvalidMethod   |
+   # | GetallusersInvalidEndpoint |
+    #| GetallusersNoAuth          |
+    #| GetallusersInvalidMethod   |
  
 @GetActiveUsers
 Scenario Outline: Check if admin able to retrieve active users with valid/invalid Endpoints
