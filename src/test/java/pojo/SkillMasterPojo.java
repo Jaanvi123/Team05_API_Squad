@@ -2,18 +2,10 @@ package pojo;
 
 public class SkillMasterPojo {
 
-    private String skillName;
     private int skillId;
+    private String skillName;
     private String creationTime;
     private String lastModTime;
-
-    public String getSkillName() {
-        return skillName;
-    }
-
-    public void setSkillName(String skillName) {
-        this.skillName = skillName;
-    }
 
     public int getSkillId() {
         return skillId;
@@ -21,6 +13,14 @@ public class SkillMasterPojo {
 
     public void setSkillId(int skillId) {
         this.skillId = skillId;
+    }
+
+    public String getSkillName() {
+        return skillName;
+    }
+
+    public void setSkillName(String skillName) {
+        this.skillName = skillName;
     }
 
     public String getCreationTime() {
@@ -37,5 +37,15 @@ public class SkillMasterPojo {
 
     public void setLastModTime(String lastModTime) {
         this.lastModTime = lastModTime;
+    }
+
+    @Override
+    public String toString() {
+        return "SkillMasterPojo{" +
+                "skillId=" + skillId +
+                ", skillName='" + skillName + '\'' +
+                ", creationTime='" + creationTime + '\'' +
+                ", lastModTime='" + lastModTime + '\'' +
+                '}';
     }
 }

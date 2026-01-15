@@ -11,7 +11,7 @@ public class TokenManager {
 
 	// Method to get the token
 	public static String getToken() {
-		token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw";
+		token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g";
 		return token;
 	}
 

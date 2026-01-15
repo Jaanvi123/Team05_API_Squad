@@ -1,6 +1,7 @@
 package utilities;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -56,5 +57,44 @@ public class ExcelUtils {
 	        }
 	        return true; // Row is empty
 	    }
-
+	 // ---------------- NEW METHODS ADDED BELOW ---------------- /** * Write a value into a specific cell. */
+	    public static void writeCell(String filePath, String sheetName, int rowIndex, int colIndex, String value) {
+	    	try (FileInputStream fis = new FileInputStream(filePath);
+	    			Workbook workbook = new XSSFWorkbook(fis))
+	    	{ Sheet sheet = workbook.getSheet(sheetName); 
+	    	Row row = sheet.getRow(rowIndex); if (row == null) { row = sheet.createRow(rowIndex);
+	    	} 
+	    	Cell cell = row.getCell(colIndex, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
+	    	cell.setCellValue(value);
+	    	try (FileOutputStream fos = new FileOutputStream(filePath))
+	    	{ workbook.write(fos); 
+	    	}
+	    	} catch (IOException e)
+	    	{ throw new RuntimeException("Error writing to Excel file", e);
+	    	} 
+	    	} 
+	    /** * Find the row index for a given ScenarioName. */ 
+	    public static int getRowIndexByScenarioName(String filePath, String sheetName, String scenarioName) 
+	    { try (FileInputStream fis = new FileInputStream(filePath);
+	    		Workbook workbook = new XSSFWorkbook(fis)) 
+	    	{ Sheet sheet = workbook.getSheet(sheetName); 
+	    	int lastRow = sheet.getLastRowNum();
+	    	for (int i = 1; i <= lastRow; i++) 
+	    	{ 
+	    		// Skip header row 
+	    		Row row = sheet.getRow(i); 
+	    		if (row == null) continue; 
+	    		Cell cell = row.getCell(0, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
+	    		String cellValue = cell.toString().trim();
+	    		if (cellValue.equalsIgnoreCase(scenarioName)){
+	    			return i;
+	    		} 
+	    	} return -1; // Not found 
+	    		} catch (IOException e) {
+	    
+	    {
+	    	throw new RuntimeException("Error reading Excel file", e);
+	    	} 
+	    } 
+	    }
 }

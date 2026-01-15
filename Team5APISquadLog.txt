@@ -1,554 +1,31 @@
 Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/saveSkillMaster
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APISquad001",
-    "batchNoOfClasses": 34,
-    "batchStatus": "active",
-    "programId": 39
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:45 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=3BAFG1okBhUiLManotyOWjeJ6VbX2BctERBBJjxjjSI%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399365"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=3BAFG1okBhUiLManotyOWjeJ6VbX2BctERBBJjxjjSI%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399365"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 155
-
-{
-    "message": "Program UnitTesting with Batch-APISquad001 already exists: ; Please give a different batch Name or Choose a different Program",
-    "success": false
-}
-
---- End of Scenario ---
-
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "123APISquad",
-    "batchNoOfClasses": 23,
-    "batchStatus": "active",
-    "programId": 39
-}
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "123APISquad",
-    "batchNoOfClasses": 23,
-    "batchStatus": "active",
-    "programId": 39
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:45 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=gta%2BN2W3MZ4xFpRk9OPYya9hyEYcPgwyPGD5oorquJ8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399366"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=gta%2BN2W3MZ4xFpRk9OPYya9hyEYcPgwyPGD5oorquJ8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399366"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 145
-
-{
-    "message": "batchName Please provide a valid name and must begin with letter and can have letters,numbers and sometimes hyphens",
-    "success": false
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:45 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=gta%2BN2W3MZ4xFpRk9OPYya9hyEYcPgwyPGD5oorquJ8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399366"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=gta%2BN2W3MZ4xFpRk9OPYya9hyEYcPgwyPGD5oorquJ8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399366"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 145
-
-{
-    "message": "batchName Please provide a valid name and must begin with letter and can have letters,numbers and sometimes hyphens",
-    "success": false
-}
-
---- End of Scenario ---
-
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "\"\"",
-    "batchNoOfClasses": 23,
-    "batchStatus": "active",
-    "programId": 39
-}
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "\"\"",
-    "batchNoOfClasses": 23,
-    "batchStatus": "active",
-    "programId": 39
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:47 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399367"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399367"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 145
-
-{
-    "message": "batchName Please provide a valid name and must begin with letter and can have letters,numbers and sometimes hyphens",
-    "success": false
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:47 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399367"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399367"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 145
-
-{
-    "message": "batchName Please provide a valid name and must begin with letter and can have letters,numbers and sometimes hyphens",
-    "success": false
-}
-
---- End of Scenario ---
-
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APISquad7759",
-    "batchNoOfClasses": 23,
-    "batchStatus": "active",
-    "programId": 39
-}
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APISquad7759",
-    "batchNoOfClasses": 23,
-    "batchStatus": "active",
-    "programId": 39
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:47 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399367"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399367"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 156
-
-{
-    "message": "Program UnitTesting with Batch-APISquad7759 already exists: ; Please give a different batch Name or Choose a different Program",
-    "success": false
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:47 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399367"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399367"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 156
-
-{
-    "message": "Program UnitTesting with Batch-APISquad7759 already exists: ; Please give a different batch Name or Choose a different Program",
-    "success": false
-}
-
---- End of Scenario ---
-
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch53270",
-    "batchNoOfClasses": -23,
-    "batchStatus": "active",
-    "programId": 39
-}
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch53270",
-    "batchNoOfClasses": -23,
-    "batchStatus": "active",
-    "programId": 39
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:47 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399367"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399367"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 87
-
-{
-    "message": " No of Classes is needed; It should be a positive number ",
-    "success": false
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:47 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399367"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=%2BeX4%2Fbq8Sa4k2pmDo%2FoZf5ddq0t0FcQaL2%2FRoupKZe8%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399367"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 87
-
-{
-    "message": " No of Classes is needed; It should be a positive number ",
-    "success": false
-}
-
---- End of Scenario ---
-
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch68560",
-    "batchNoOfClasses": 23,
-    "batchStatus": "INVALID",
-    "programId": 39
-}
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch68560",
-    "batchNoOfClasses": 23,
-    "batchStatus": "INVALID",
-    "programId": 39
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:48 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=xW19b3YQ%2BUGEnZk04zyhURR%2BanzjjLWOmEAwX47QHHM%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399368"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=xW19b3YQ%2BUGEnZk04zyhURR%2BanzjjLWOmEAwX47QHHM%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399368"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 72
-
-{
-    "message": "Invalid Status: must be Active or Inactive",
-    "success": false
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:48 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=xW19b3YQ%2BUGEnZk04zyhURR%2BanzjjLWOmEAwX47QHHM%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399368"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=xW19b3YQ%2BUGEnZk04zyhURR%2BanzjjLWOmEAwX47QHHM%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399368"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 72
-
-{
-    "message": "Invalid Status: must be Active or Inactive",
-    "success": false
-}
-
---- End of Scenario ---
-
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch23818",
-    "batchNoOfClasses": 23,
-    "batchStatus": "active",
-    "programId": 39
-}
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch23818",
-    "batchNoOfClasses": 23,
-    "batchStatus": "active",
-    "programId": 39
+    "skillId": 0,
+    "skillName": "Skill_67d1fe45",
+    "creationTime": "2026-01-15T13:50:54.237701600-06:00",
+    "lastModTime": "2026-01-15T13:50:54.237701600-06:00"
 }
 HTTP/1.1 201 Created
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:48 GMT
+Date: Thu, 15 Jan 2026 19:50:55 GMT
 Expires: 0
 Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
 Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=xW19b3YQ%2BUGEnZk04zyhURR%2BanzjjLWOmEAwX47QHHM%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399368"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=xW19b3YQ%2BUGEnZk04zyhURR%2BanzjjLWOmEAwX47QHHM%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399368"
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=RH796xY4Fa8XiV%2FOLQR9VAMdp9h1uK8kAfcg6T8PX2w%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506655"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=RH796xY4Fa8XiV%2FOLQR9VAMdp9h1uK8kAfcg6T8PX2w%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506655"
 Server: Heroku
 Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 Vary: Origin
@@ -558,99 +35,1216 @@ Via: 1.1 heroku-router
 X-Content-Type-Options: nosniff
 X-Frame-Options: DENY
 X-Xss-Protection: 0
-Content-Length: 174
+Content-Length: 137
 
 {
-    "batchId": 116,
-    "batchName": "APITeam5Batch23818",
-    "batchDescription": "Team5 Batch Java",
-    "batchStatus": "Active",
-    "batchNoOfClasses": 23,
-    "programId": 39,
-    "programName": "UnitTesting"
-}
-HTTP/1.1 201 Created
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:48 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=xW19b3YQ%2BUGEnZk04zyhURR%2BanzjjLWOmEAwX47QHHM%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399368"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=xW19b3YQ%2BUGEnZk04zyhURR%2BanzjjLWOmEAwX47QHHM%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399368"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 174
-
-{
-    "batchId": 116,
-    "batchName": "APITeam5Batch23818",
-    "batchDescription": "Team5 Batch Java",
-    "batchStatus": "Active",
-    "batchNoOfClasses": 23,
-    "programId": 39,
-    "programName": "UnitTesting"
+    "skillId": 138,
+    "skillName": "Skill_67d1fe45",
+    "creationTime": "2026-01-15T19:50:55.720+00:00",
+    "lastModTime": "2026-01-15T19:50:55.720+00:00"
 }
 
 --- End of Scenario ---
 
 Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batch
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/saveSkillMaster
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch61443",
-    "batchNoOfClasses": 67,
-    "batchStatus": "active",
-    "programId": 39
+    "skillId": 0,
+    "skillName": "Skill_67d1fe45",
+    "creationTime": "2026-01-15T19:50:55.720+00:00",
+    "lastModTime": "2026-01-15T19:50:55.720+00:00"
 }
 Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batch
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/saveSkillMaster
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch61443",
-    "batchNoOfClasses": 67,
-    "batchStatus": "active",
-    "programId": 39
+    "skillId": 0,
+    "skillName": "Skill_67d1fe45",
+    "creationTime": "2026-01-15T19:50:55.720+00:00",
+    "lastModTime": "2026-01-15T19:50:55.720+00:00"
+}
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:50:58 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=6AyU0a7YloXQu5Mp1NC41i7ToORrIPSXz1M9A4Nvb3Q%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506658"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=6AyU0a7YloXQu5Mp1NC41i7ToORrIPSXz1M9A4Nvb3Q%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506658"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Content-Length: 78
+
+{
+    "message": "cannot create skillMaster , since already exists",
+    "success": false
+}
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:50:58 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=6AyU0a7YloXQu5Mp1NC41i7ToORrIPSXz1M9A4Nvb3Q%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506658"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=6AyU0a7YloXQu5Mp1NC41i7ToORrIPSXz1M9A4Nvb3Q%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506658"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Content-Length: 78
+
+{
+    "message": "cannot create skillMaster , since already exists",
+    "success": false
+}
+
+--- End of Scenario ---
+
+Request method:	POST
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/saveSkillMaster
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "skillId": 0,
+    "skillName": "",
+    "creationTime": null,
+    "lastModTime": null
+}
+Request method:	POST
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/saveSkillMaster
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "skillId": 0,
+    "skillName": "",
+    "creationTime": null,
+    "lastModTime": null
+}
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:50:58 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=iEaJ6Bt0TtKD0xnMte91N%2FhBtVtvCsoxT28MpYYaPyg%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506659"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=iEaJ6Bt0TtKD0xnMte91N%2FhBtVtvCsoxT28MpYYaPyg%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506659"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Content-Length: 78
+
+{
+    "message": "cannot create skillMaster , since already exists",
+    "success": false
+}
+HTTP/1.1 400 Bad Request
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:50:58 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=iEaJ6Bt0TtKD0xnMte91N%2FhBtVtvCsoxT28MpYYaPyg%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506659"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=iEaJ6Bt0TtKD0xnMte91N%2FhBtVtvCsoxT28MpYYaPyg%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506659"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Content-Length: 78
+
+{
+    "message": "cannot create skillMaster , since already exists",
+    "success": false
+}
+
+--- End of Scenario ---
+
+Request method:	GET
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/allSkillMaster
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/allSkillMaster
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:50:58 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=iEaJ6Bt0TtKD0xnMte91N%2FhBtVtvCsoxT28MpYYaPyg%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506659"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=iEaJ6Bt0TtKD0xnMte91N%2FhBtVtvCsoxT28MpYYaPyg%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506659"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Transfer-Encoding: chunked
+
+[
+    {
+        "skillId": 1,
+        "skillName": "Java",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2021-10-04T18:14:01.957+00:00"
+    },
+    {
+        "skillId": 2,
+        "skillName": "Python",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2021-10-04T18:14:01.957+00:00"
+    },
+    {
+        "skillId": 4,
+        "skillName": "Selenium",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2021-10-04T18:14:01.957+00:00"
+    },
+    {
+        "skillId": 5,
+        "skillName": "Spring",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2021-10-04T18:14:01.957+00:00"
+    },
+    {
+        "skillId": 6,
+        "skillName": "Postgres",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2021-10-04T18:14:01.957+00:00"
+    },
+    {
+        "skillId": 7,
+        "skillName": "TestIntegration",
+        "creationTime": "2023-11-30T18:30:31.333+00:00",
+        "lastModTime": "2023-11-30T18:30:31.333+00:00"
+    },
+    {
+        "skillId": 9,
+        "skillName": "java api",
+        "creationTime": "2026-01-10T05:12:51.542+00:00",
+        "lastModTime": "2026-01-10T05:12:51.542+00:00"
+    },
+    {
+        "skillId": 109,
+        "skillName": "Team1_CypressbUpdated",
+        "creationTime": "2026-01-14T18:41:04.090+00:00",
+        "lastModTime": "2026-01-14T18:41:06.663+00:00"
+    },
+    {
+        "skillId": 111,
+        "skillName": "Amazon",
+        "creationTime": "2026-01-14T23:32:53.698+00:00",
+        "lastModTime": "2026-01-14T23:32:53.698+00:00"
+    },
+    {
+        "skillId": 116,
+        "skillName": "Pintrest",
+        "creationTime": "2026-01-15T15:00:11.966+00:00",
+        "lastModTime": "2026-01-15T15:00:11.966+00:00"
+    },
+    {
+        "skillId": 117,
+        "skillName": "Skill_27257053",
+        "creationTime": "2026-01-15T15:29:23.197+00:00",
+        "lastModTime": "2026-01-15T15:29:23.197+00:00"
+    },
+    {
+        "skillId": 118,
+        "skillName": "Skill_df459b38",
+        "creationTime": "2026-01-15T15:44:39.226+00:00",
+        "lastModTime": "2026-01-15T15:44:39.226+00:00"
+    },
+    {
+        "skillId": 119,
+        "skillName": "Skill_fb1252a5",
+        "creationTime": "2026-01-15T15:45:38.298+00:00",
+        "lastModTime": "2026-01-15T15:45:38.298+00:00"
+    },
+    {
+        "skillId": 120,
+        "skillName": "Skill_97fff95b",
+        "creationTime": "2026-01-15T15:46:56.568+00:00",
+        "lastModTime": "2026-01-15T15:46:56.568+00:00"
+    },
+    {
+        "skillId": 121,
+        "skillName": "Skill_027707a3",
+        "creationTime": "2026-01-15T15:48:45.011+00:00",
+        "lastModTime": "2026-01-15T15:48:45.011+00:00"
+    },
+    {
+        "skillId": 122,
+        "skillName": "Skill_913c6270",
+        "creationTime": "2026-01-15T15:51:25.682+00:00",
+        "lastModTime": "2026-01-15T15:51:25.682+00:00"
+    },
+    {
+        "skillId": 123,
+        "skillName": "Skill_f6d22041",
+        "creationTime": "2026-01-15T15:51:49.666+00:00",
+        "lastModTime": "2026-01-15T15:51:49.666+00:00"
+    },
+    {
+        "skillId": 3,
+        "skillName": "PostmanNewUpdated",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2026-01-15T16:01:50.509+00:00"
+    },
+    {
+        "skillId": 124,
+        "skillName": "Skill_d1fd3b68",
+        "creationTime": "2026-01-15T16:28:48.570+00:00",
+        "lastModTime": "2026-01-15T16:28:48.570+00:00"
+    },
+    {
+        "skillId": 125,
+        "skillName": "UpdatedSkill_08a5e580",
+        "creationTime": "2026-01-15T16:32:00.746+00:00",
+        "lastModTime": "2026-01-15T16:32:06.196+00:00"
+    },
+    {
+        "skillId": 27,
+        "skillName": "Java Developer",
+        "creationTime": "2026-01-11T15:27:57.944+00:00",
+        "lastModTime": "2026-01-11T15:27:57.944+00:00"
+    },
+    {
+        "skillId": 28,
+        "skillName": "Team1_Java",
+        "creationTime": "2026-01-11T19:16:17.527+00:00",
+        "lastModTime": "2026-01-11T19:16:17.527+00:00"
+    },
+    {
+        "skillId": 126,
+        "skillName": "UpdatedSkill_a5913051",
+        "creationTime": "2026-01-15T16:36:38.440+00:00",
+        "lastModTime": "2026-01-15T16:36:44.387+00:00"
+    },
+    {
+        "skillId": 30,
+        "skillName": "Team1_JavaUpdated",
+        "creationTime": "2026-01-11T19:58:05.869+00:00",
+        "lastModTime": "2026-01-11T19:58:05.869+00:00"
+    },
+    {
+        "skillId": 31,
+        "skillName": "Team1_Seleniumm",
+        "creationTime": "2026-01-11T20:05:37.225+00:00",
+        "lastModTime": "2026-01-11T20:05:37.225+00:00"
+    },
+    {
+        "skillId": 32,
+        "skillName": "Team1_SeleniummUpdated",
+        "creationTime": "2026-01-11T20:15:04.765+00:00",
+        "lastModTime": "2026-01-11T20:15:04.765+00:00"
+    },
+    {
+        "skillId": 127,
+        "skillName": "UpdatedSkill_51175a04",
+        "creationTime": "2026-01-15T16:38:27.578+00:00",
+        "lastModTime": "2026-01-15T16:38:33.762+00:00"
+    },
+    {
+        "skillId": 36,
+        "skillName": "Team1_JIRAUpdated",
+        "creationTime": "2026-01-11T22:57:21.219+00:00",
+        "lastModTime": "2026-01-11T22:57:21.219+00:00"
+    },
+    {
+        "skillId": 38,
+        "skillName": "Team1_JIRAAUpdated",
+        "creationTime": "2026-01-11T23:05:59.590+00:00",
+        "lastModTime": "2026-01-11T23:05:59.590+00:00"
+    },
+    {
+        "skillId": 41,
+        "skillName": "Team1_JIRAABUpdated",
+        "creationTime": "2026-01-11T23:44:10.990+00:00",
+        "lastModTime": "2026-01-11T23:44:10.990+00:00"
+    },
+    {
+        "skillId": 43,
+        "skillName": "Team1_Playwright",
+        "creationTime": "2026-01-12T00:02:18.197+00:00",
+        "lastModTime": "2026-01-12T00:02:18.197+00:00"
+    },
+    {
+        "skillId": 128,
+        "skillName": "UpdatedSkill_9745f807",
+        "creationTime": "2026-01-15T18:45:14.419+00:00",
+        "lastModTime": "2026-01-15T18:45:20.430+00:00"
+    },
+    {
+        "skillId": 129,
+        "skillName": "Skill_24d39afe",
+        "creationTime": "2026-01-15T18:51:36.866+00:00",
+        "lastModTime": "2026-01-15T18:51:36.866+00:00"
+    },
+    {
+        "skillId": 50,
+        "skillName": "Selenium1234",
+        "creationTime": "2026-01-12T02:02:13.353+00:00",
+        "lastModTime": "2026-01-12T02:02:13.353+00:00"
+    },
+    {
+        "skillId": 130,
+        "skillName": "UpdatedSkill_b5725b54",
+        "creationTime": "2026-01-15T18:55:40.892+00:00",
+        "lastModTime": "2026-01-15T18:55:47.061+00:00"
+    },
+    {
+        "skillId": 131,
+        "skillName": "UpdatedSkill_0325b8e2",
+        "creationTime": "2026-01-15T18:57:47.897+00:00",
+        "lastModTime": "2026-01-15T18:57:53.636+00:00"
+    },
+    {
+        "skillId": 132,
+        "skillName": "Skill_b7c75fc9",
+        "creationTime": "2026-01-15T19:04:56.373+00:00",
+        "lastModTime": "2026-01-15T19:04:56.373+00:00"
+    },
+    {
+        "skillId": 56,
+        "skillName": "Skill_1768234980315",
+        "creationTime": "2026-01-12T16:23:05.291+00:00",
+        "lastModTime": "2026-01-12T16:23:05.291+00:00"
+    },
+    {
+        "skillId": 59,
+        "skillName": "Skill_1768235031352",
+        "creationTime": "2026-01-12T16:23:56.741+00:00",
+        "lastModTime": "2026-01-12T16:23:56.741+00:00"
+    },
+    {
+        "skillId": 62,
+        "skillName": "Skill_1768235373519",
+        "creationTime": "2026-01-12T16:29:39.479+00:00",
+        "lastModTime": "2026-01-12T16:29:39.479+00:00"
+    },
+    {
+        "skillId": 64,
+        "skillName": "Skill_1768235529906",
+        "creationTime": "2026-01-12T16:32:15.529+00:00",
+        "lastModTime": "2026-01-12T16:32:15.529+00:00"
+    },
+    {
+        "skillId": 65,
+        "skillName": "Skill_1768235791124",
+        "creationTime": "2026-01-12T16:36:36.178+00:00",
+        "lastModTime": "2026-01-12T16:36:36.178+00:00"
+    },
+    {
+        "skillId": 66,
+        "skillName": "Skill_1768235914585",
+        "creationTime": "2026-01-12T16:38:39.551+00:00",
+        "lastModTime": "2026-01-12T16:38:39.551+00:00"
+    },
+    {
+        "skillId": 67,
+        "skillName": "Skill_1768236004230",
+        "creationTime": "2026-01-12T16:40:09.027+00:00",
+        "lastModTime": "2026-01-12T16:40:09.027+00:00"
+    },
+    {
+        "skillId": 133,
+        "skillName": "UpdatedSkill_31265fda",
+        "creationTime": "2026-01-15T19:11:55.740+00:00",
+        "lastModTime": "2026-01-15T19:12:00.999+00:00"
+    },
+    {
+        "skillId": 134,
+        "skillName": "UpdatedSkill_99bab490",
+        "creationTime": "2026-01-15T19:14:30.829+00:00",
+        "lastModTime": "2026-01-15T19:14:36.858+00:00"
+    },
+    {
+        "skillId": 135,
+        "skillName": "Team1_playghtUIVI",
+        "creationTime": "2026-01-15T19:19:43.801+00:00",
+        "lastModTime": "2026-01-15T19:19:43.801+00:00"
+    },
+    {
+        "skillId": 72,
+        "skillName": "Team1_Cypress",
+        "creationTime": "2026-01-12T17:07:40.948+00:00",
+        "lastModTime": "2026-01-12T17:07:40.948+00:00"
+    },
+    {
+        "skillId": 51,
+        "skillName": "testing",
+        "creationTime": "2026-01-12T02:05:12.354+00:00",
+        "lastModTime": "2026-01-12T17:32:24.478+00:00"
+    },
+    {
+        "skillId": 76,
+        "skillName": "team2_javascript",
+        "creationTime": "2026-01-12T18:23:02.859+00:00",
+        "lastModTime": "2026-01-12T18:23:02.859+00:00"
+    },
+    {
+        "skillId": 77,
+        "skillName": "team02_javascript",
+        "creationTime": "2026-01-12T19:50:24.421+00:00",
+        "lastModTime": "2026-01-12T19:54:43.797+00:00"
+    },
+    {
+        "skillId": 78,
+        "skillName": "Skill_1768256490862",
+        "creationTime": "2026-01-12T22:21:36.715+00:00",
+        "lastModTime": "2026-01-12T22:21:36.715+00:00"
+    },
+    {
+        "skillId": 79,
+        "skillName": "",
+        "creationTime": "2026-01-12T22:21:38.883+00:00",
+        "lastModTime": "2026-01-12T22:21:38.883+00:00"
+    },
+    {
+        "skillId": 138,
+        "skillName": "Skill_67d1fe45",
+        "creationTime": "2026-01-15T19:50:55.720+00:00",
+        "lastModTime": "2026-01-15T19:50:55.720+00:00"
+    },
+    {
+        "skillId": 86,
+        "skillName": "RubyGroovy",
+        "creationTime": "2026-01-13T23:19:13.566+00:00",
+        "lastModTime": "2026-01-13T23:19:13.566+00:00"
+    },
+    {
+        "skillId": 87,
+        "skillName": "Skill_57977",
+        "creationTime": "2026-01-14T01:32:59.074+00:00",
+        "lastModTime": "2026-01-14T01:32:59.074+00:00"
+    },
+    {
+        "skillId": 88,
+        "skillName": "Skill_18151",
+        "creationTime": "2026-01-14T01:33:01.664+00:00",
+        "lastModTime": "2026-01-14T01:33:01.664+00:00"
+    },
+    {
+        "skillId": 89,
+        "skillName": "Skill_64488",
+        "creationTime": "2026-01-14T01:33:03.246+00:00",
+        "lastModTime": "2026-01-14T01:33:03.246+00:00"
+    },
+    {
+        "skillId": 90,
+        "skillName": "RubyGroovy1267",
+        "creationTime": "2026-01-14T01:36:29.176+00:00",
+        "lastModTime": "2026-01-14T01:36:29.176+00:00"
+    },
+    {
+        "skillId": 91,
+        "skillName": "Skill_36693",
+        "creationTime": "2026-01-14T01:38:57.256+00:00",
+        "lastModTime": "2026-01-14T01:38:57.256+00:00"
+    },
+    {
+        "skillId": 92,
+        "skillName": "Skill_85707",
+        "creationTime": "2026-01-14T01:38:59.551+00:00",
+        "lastModTime": "2026-01-14T01:38:59.551+00:00"
+    },
+    {
+        "skillId": 93,
+        "skillName": "Skill_40054",
+        "creationTime": "2026-01-14T01:39:00.930+00:00",
+        "lastModTime": "2026-01-14T01:39:00.930+00:00"
+    },
+    {
+        "skillId": 95,
+        "skillName": "Skill_36505",
+        "creationTime": "2026-01-14T02:12:55.156+00:00",
+        "lastModTime": "2026-01-14T02:12:55.156+00:00"
+    },
+    {
+        "skillId": 96,
+        "skillName": "Skill_27742",
+        "creationTime": "2026-01-14T02:12:56.955+00:00",
+        "lastModTime": "2026-01-14T02:12:56.955+00:00"
+    },
+    {
+        "skillId": 97,
+        "skillName": "Skill_35392",
+        "creationTime": "2026-01-14T02:14:39.002+00:00",
+        "lastModTime": "2026-01-14T02:14:39.002+00:00"
+    },
+    {
+        "skillId": 98,
+        "skillName": "Skill_98525",
+        "creationTime": "2026-01-14T02:14:41.117+00:00",
+        "lastModTime": "2026-01-14T02:14:41.117+00:00"
+    },
+    {
+        "skillId": 94,
+        "skillName": "selenium with java1",
+        "creationTime": "2026-01-14T02:12:50.677+00:00",
+        "lastModTime": "2026-01-14T02:15:40.153+00:00"
+    }
+]
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:50:58 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=iEaJ6Bt0TtKD0xnMte91N%2FhBtVtvCsoxT28MpYYaPyg%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506659"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=iEaJ6Bt0TtKD0xnMte91N%2FhBtVtvCsoxT28MpYYaPyg%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506659"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Transfer-Encoding: chunked
+
+[
+    {
+        "skillId": 1,
+        "skillName": "Java",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2021-10-04T18:14:01.957+00:00"
+    },
+    {
+        "skillId": 2,
+        "skillName": "Python",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2021-10-04T18:14:01.957+00:00"
+    },
+    {
+        "skillId": 4,
+        "skillName": "Selenium",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2021-10-04T18:14:01.957+00:00"
+    },
+    {
+        "skillId": 5,
+        "skillName": "Spring",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2021-10-04T18:14:01.957+00:00"
+    },
+    {
+        "skillId": 6,
+        "skillName": "Postgres",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2021-10-04T18:14:01.957+00:00"
+    },
+    {
+        "skillId": 7,
+        "skillName": "TestIntegration",
+        "creationTime": "2023-11-30T18:30:31.333+00:00",
+        "lastModTime": "2023-11-30T18:30:31.333+00:00"
+    },
+    {
+        "skillId": 9,
+        "skillName": "java api",
+        "creationTime": "2026-01-10T05:12:51.542+00:00",
+        "lastModTime": "2026-01-10T05:12:51.542+00:00"
+    },
+    {
+        "skillId": 109,
+        "skillName": "Team1_CypressbUpdated",
+        "creationTime": "2026-01-14T18:41:04.090+00:00",
+        "lastModTime": "2026-01-14T18:41:06.663+00:00"
+    },
+    {
+        "skillId": 111,
+        "skillName": "Amazon",
+        "creationTime": "2026-01-14T23:32:53.698+00:00",
+        "lastModTime": "2026-01-14T23:32:53.698+00:00"
+    },
+    {
+        "skillId": 116,
+        "skillName": "Pintrest",
+        "creationTime": "2026-01-15T15:00:11.966+00:00",
+        "lastModTime": "2026-01-15T15:00:11.966+00:00"
+    },
+    {
+        "skillId": 117,
+        "skillName": "Skill_27257053",
+        "creationTime": "2026-01-15T15:29:23.197+00:00",
+        "lastModTime": "2026-01-15T15:29:23.197+00:00"
+    },
+    {
+        "skillId": 118,
+        "skillName": "Skill_df459b38",
+        "creationTime": "2026-01-15T15:44:39.226+00:00",
+        "lastModTime": "2026-01-15T15:44:39.226+00:00"
+    },
+    {
+        "skillId": 119,
+        "skillName": "Skill_fb1252a5",
+        "creationTime": "2026-01-15T15:45:38.298+00:00",
+        "lastModTime": "2026-01-15T15:45:38.298+00:00"
+    },
+    {
+        "skillId": 120,
+        "skillName": "Skill_97fff95b",
+        "creationTime": "2026-01-15T15:46:56.568+00:00",
+        "lastModTime": "2026-01-15T15:46:56.568+00:00"
+    },
+    {
+        "skillId": 121,
+        "skillName": "Skill_027707a3",
+        "creationTime": "2026-01-15T15:48:45.011+00:00",
+        "lastModTime": "2026-01-15T15:48:45.011+00:00"
+    },
+    {
+        "skillId": 122,
+        "skillName": "Skill_913c6270",
+        "creationTime": "2026-01-15T15:51:25.682+00:00",
+        "lastModTime": "2026-01-15T15:51:25.682+00:00"
+    },
+    {
+        "skillId": 123,
+        "skillName": "Skill_f6d22041",
+        "creationTime": "2026-01-15T15:51:49.666+00:00",
+        "lastModTime": "2026-01-15T15:51:49.666+00:00"
+    },
+    {
+        "skillId": 3,
+        "skillName": "PostmanNewUpdated",
+        "creationTime": "2021-10-04T18:14:01.957+00:00",
+        "lastModTime": "2026-01-15T16:01:50.509+00:00"
+    },
+    {
+        "skillId": 124,
+        "skillName": "Skill_d1fd3b68",
+        "creationTime": "2026-01-15T16:28:48.570+00:00",
+        "lastModTime": "2026-01-15T16:28:48.570+00:00"
+    },
+    {
+        "skillId": 125,
+        "skillName": "UpdatedSkill_08a5e580",
+        "creationTime": "2026-01-15T16:32:00.746+00:00",
+        "lastModTime": "2026-01-15T16:32:06.196+00:00"
+    },
+    {
+        "skillId": 27,
+        "skillName": "Java Developer",
+        "creationTime": "2026-01-11T15:27:57.944+00:00",
+        "lastModTime": "2026-01-11T15:27:57.944+00:00"
+    },
+    {
+        "skillId": 28,
+        "skillName": "Team1_Java",
+        "creationTime": "2026-01-11T19:16:17.527+00:00",
+        "lastModTime": "2026-01-11T19:16:17.527+00:00"
+    },
+    {
+        "skillId": 126,
+        "skillName": "UpdatedSkill_a5913051",
+        "creationTime": "2026-01-15T16:36:38.440+00:00",
+        "lastModTime": "2026-01-15T16:36:44.387+00:00"
+    },
+    {
+        "skillId": 30,
+        "skillName": "Team1_JavaUpdated",
+        "creationTime": "2026-01-11T19:58:05.869+00:00",
+        "lastModTime": "2026-01-11T19:58:05.869+00:00"
+    },
+    {
+        "skillId": 31,
+        "skillName": "Team1_Seleniumm",
+        "creationTime": "2026-01-11T20:05:37.225+00:00",
+        "lastModTime": "2026-01-11T20:05:37.225+00:00"
+    },
+    {
+        "skillId": 32,
+        "skillName": "Team1_SeleniummUpdated",
+        "creationTime": "2026-01-11T20:15:04.765+00:00",
+        "lastModTime": "2026-01-11T20:15:04.765+00:00"
+    },
+    {
+        "skillId": 127,
+        "skillName": "UpdatedSkill_51175a04",
+        "creationTime": "2026-01-15T16:38:27.578+00:00",
+        "lastModTime": "2026-01-15T16:38:33.762+00:00"
+    },
+    {
+        "skillId": 36,
+        "skillName": "Team1_JIRAUpdated",
+        "creationTime": "2026-01-11T22:57:21.219+00:00",
+        "lastModTime": "2026-01-11T22:57:21.219+00:00"
+    },
+    {
+        "skillId": 38,
+        "skillName": "Team1_JIRAAUpdated",
+        "creationTime": "2026-01-11T23:05:59.590+00:00",
+        "lastModTime": "2026-01-11T23:05:59.590+00:00"
+    },
+    {
+        "skillId": 41,
+        "skillName": "Team1_JIRAABUpdated",
+        "creationTime": "2026-01-11T23:44:10.990+00:00",
+        "lastModTime": "2026-01-11T23:44:10.990+00:00"
+    },
+    {
+        "skillId": 43,
+        "skillName": "Team1_Playwright",
+        "creationTime": "2026-01-12T00:02:18.197+00:00",
+        "lastModTime": "2026-01-12T00:02:18.197+00:00"
+    },
+    {
+        "skillId": 128,
+        "skillName": "UpdatedSkill_9745f807",
+        "creationTime": "2026-01-15T18:45:14.419+00:00",
+        "lastModTime": "2026-01-15T18:45:20.430+00:00"
+    },
+    {
+        "skillId": 129,
+        "skillName": "Skill_24d39afe",
+        "creationTime": "2026-01-15T18:51:36.866+00:00",
+        "lastModTime": "2026-01-15T18:51:36.866+00:00"
+    },
+    {
+        "skillId": 50,
+        "skillName": "Selenium1234",
+        "creationTime": "2026-01-12T02:02:13.353+00:00",
+        "lastModTime": "2026-01-12T02:02:13.353+00:00"
+    },
+    {
+        "skillId": 130,
+        "skillName": "UpdatedSkill_b5725b54",
+        "creationTime": "2026-01-15T18:55:40.892+00:00",
+        "lastModTime": "2026-01-15T18:55:47.061+00:00"
+    },
+    {
+        "skillId": 131,
+        "skillName": "UpdatedSkill_0325b8e2",
+        "creationTime": "2026-01-15T18:57:47.897+00:00",
+        "lastModTime": "2026-01-15T18:57:53.636+00:00"
+    },
+    {
+        "skillId": 132,
+        "skillName": "Skill_b7c75fc9",
+        "creationTime": "2026-01-15T19:04:56.373+00:00",
+        "lastModTime": "2026-01-15T19:04:56.373+00:00"
+    },
+    {
+        "skillId": 56,
+        "skillName": "Skill_1768234980315",
+        "creationTime": "2026-01-12T16:23:05.291+00:00",
+        "lastModTime": "2026-01-12T16:23:05.291+00:00"
+    },
+    {
+        "skillId": 59,
+        "skillName": "Skill_1768235031352",
+        "creationTime": "2026-01-12T16:23:56.741+00:00",
+        "lastModTime": "2026-01-12T16:23:56.741+00:00"
+    },
+    {
+        "skillId": 62,
+        "skillName": "Skill_1768235373519",
+        "creationTime": "2026-01-12T16:29:39.479+00:00",
+        "lastModTime": "2026-01-12T16:29:39.479+00:00"
+    },
+    {
+        "skillId": 64,
+        "skillName": "Skill_1768235529906",
+        "creationTime": "2026-01-12T16:32:15.529+00:00",
+        "lastModTime": "2026-01-12T16:32:15.529+00:00"
+    },
+    {
+        "skillId": 65,
+        "skillName": "Skill_1768235791124",
+        "creationTime": "2026-01-12T16:36:36.178+00:00",
+        "lastModTime": "2026-01-12T16:36:36.178+00:00"
+    },
+    {
+        "skillId": 66,
+        "skillName": "Skill_1768235914585",
+        "creationTime": "2026-01-12T16:38:39.551+00:00",
+        "lastModTime": "2026-01-12T16:38:39.551+00:00"
+    },
+    {
+        "skillId": 67,
+        "skillName": "Skill_1768236004230",
+        "creationTime": "2026-01-12T16:40:09.027+00:00",
+        "lastModTime": "2026-01-12T16:40:09.027+00:00"
+    },
+    {
+        "skillId": 133,
+        "skillName": "UpdatedSkill_31265fda",
+        "creationTime": "2026-01-15T19:11:55.740+00:00",
+        "lastModTime": "2026-01-15T19:12:00.999+00:00"
+    },
+    {
+        "skillId": 134,
+        "skillName": "UpdatedSkill_99bab490",
+        "creationTime": "2026-01-15T19:14:30.829+00:00",
+        "lastModTime": "2026-01-15T19:14:36.858+00:00"
+    },
+    {
+        "skillId": 135,
+        "skillName": "Team1_playghtUIVI",
+        "creationTime": "2026-01-15T19:19:43.801+00:00",
+        "lastModTime": "2026-01-15T19:19:43.801+00:00"
+    },
+    {
+        "skillId": 72,
+        "skillName": "Team1_Cypress",
+        "creationTime": "2026-01-12T17:07:40.948+00:00",
+        "lastModTime": "2026-01-12T17:07:40.948+00:00"
+    },
+    {
+        "skillId": 51,
+        "skillName": "testing",
+        "creationTime": "2026-01-12T02:05:12.354+00:00",
+        "lastModTime": "2026-01-12T17:32:24.478+00:00"
+    },
+    {
+        "skillId": 76,
+        "skillName": "team2_javascript",
+        "creationTime": "2026-01-12T18:23:02.859+00:00",
+        "lastModTime": "2026-01-12T18:23:02.859+00:00"
+    },
+    {
+        "skillId": 77,
+        "skillName": "team02_javascript",
+        "creationTime": "2026-01-12T19:50:24.421+00:00",
+        "lastModTime": "2026-01-12T19:54:43.797+00:00"
+    },
+    {
+        "skillId": 78,
+        "skillName": "Skill_1768256490862",
+        "creationTime": "2026-01-12T22:21:36.715+00:00",
+        "lastModTime": "2026-01-12T22:21:36.715+00:00"
+    },
+    {
+        "skillId": 79,
+        "skillName": "",
+        "creationTime": "2026-01-12T22:21:38.883+00:00",
+        "lastModTime": "2026-01-12T22:21:38.883+00:00"
+    },
+    {
+        "skillId": 138,
+        "skillName": "Skill_67d1fe45",
+        "creationTime": "2026-01-15T19:50:55.720+00:00",
+        "lastModTime": "2026-01-15T19:50:55.720+00:00"
+    },
+    {
+        "skillId": 86,
+        "skillName": "RubyGroovy",
+        "creationTime": "2026-01-13T23:19:13.566+00:00",
+        "lastModTime": "2026-01-13T23:19:13.566+00:00"
+    },
+    {
+        "skillId": 87,
+        "skillName": "Skill_57977",
+        "creationTime": "2026-01-14T01:32:59.074+00:00",
+        "lastModTime": "2026-01-14T01:32:59.074+00:00"
+    },
+    {
+        "skillId": 88,
+        "skillName": "Skill_18151",
+        "creationTime": "2026-01-14T01:33:01.664+00:00",
+        "lastModTime": "2026-01-14T01:33:01.664+00:00"
+    },
+    {
+        "skillId": 89,
+        "skillName": "Skill_64488",
+        "creationTime": "2026-01-14T01:33:03.246+00:00",
+        "lastModTime": "2026-01-14T01:33:03.246+00:00"
+    },
+    {
+        "skillId": 90,
+        "skillName": "RubyGroovy1267",
+        "creationTime": "2026-01-14T01:36:29.176+00:00",
+        "lastModTime": "2026-01-14T01:36:29.176+00:00"
+    },
+    {
+        "skillId": 91,
+        "skillName": "Skill_36693",
+        "creationTime": "2026-01-14T01:38:57.256+00:00",
+        "lastModTime": "2026-01-14T01:38:57.256+00:00"
+    },
+    {
+        "skillId": 92,
+        "skillName": "Skill_85707",
+        "creationTime": "2026-01-14T01:38:59.551+00:00",
+        "lastModTime": "2026-01-14T01:38:59.551+00:00"
+    },
+    {
+        "skillId": 93,
+        "skillName": "Skill_40054",
+        "creationTime": "2026-01-14T01:39:00.930+00:00",
+        "lastModTime": "2026-01-14T01:39:00.930+00:00"
+    },
+    {
+        "skillId": 95,
+        "skillName": "Skill_36505",
+        "creationTime": "2026-01-14T02:12:55.156+00:00",
+        "lastModTime": "2026-01-14T02:12:55.156+00:00"
+    },
+    {
+        "skillId": 96,
+        "skillName": "Skill_27742",
+        "creationTime": "2026-01-14T02:12:56.955+00:00",
+        "lastModTime": "2026-01-14T02:12:56.955+00:00"
+    },
+    {
+        "skillId": 97,
+        "skillName": "Skill_35392",
+        "creationTime": "2026-01-14T02:14:39.002+00:00",
+        "lastModTime": "2026-01-14T02:14:39.002+00:00"
+    },
+    {
+        "skillId": 98,
+        "skillName": "Skill_98525",
+        "creationTime": "2026-01-14T02:14:41.117+00:00",
+        "lastModTime": "2026-01-14T02:14:41.117+00:00"
+    },
+    {
+        "skillId": 94,
+        "skillName": "selenium with java1",
+        "creationTime": "2026-01-14T02:12:50.677+00:00",
+        "lastModTime": "2026-01-14T02:15:40.153+00:00"
+    }
+]
+
+--- End of Scenario ---
+
+Request method:	GET
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/skills/Skill_67d1fe45
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/skills/Skill_67d1fe45
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:51:00 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=9hGc8VP8tT8gNjNERFxL3Ofer3xS4HnOjLQ3smTGY6U%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506660"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=9hGc8VP8tT8gNjNERFxL3Ofer3xS4HnOjLQ3smTGY6U%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506660"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Content-Length: 139
+
+[
+    {
+        "skillId": 138,
+        "skillName": "Skill_67d1fe45",
+        "creationTime": "2026-01-15T19:50:55.720+00:00",
+        "lastModTime": "2026-01-15T19:50:55.720+00:00"
+    }
+]
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:51:00 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=9hGc8VP8tT8gNjNERFxL3Ofer3xS4HnOjLQ3smTGY6U%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506660"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=9hGc8VP8tT8gNjNERFxL3Ofer3xS4HnOjLQ3smTGY6U%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506660"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Content-Length: 139
+
+[
+    {
+        "skillId": 138,
+        "skillName": "Skill_67d1fe45",
+        "creationTime": "2026-01-15T19:50:55.720+00:00",
+        "lastModTime": "2026-01-15T19:50:55.720+00:00"
+    }
+]
+
+--- End of Scenario ---
+
+Request method:	GET
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/skills/InvalidSkill_999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/skills/InvalidSkill_999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:51:00 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=9hGc8VP8tT8gNjNERFxL3Ofer3xS4HnOjLQ3smTGY6U%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506660"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=9hGc8VP8tT8gNjNERFxL3Ofer3xS4HnOjLQ3smTGY6U%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506660"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Content-Length: 68
+
+{
+    "message": "skill with idInvalidSkill_999not found",
+    "success": false
 }
 HTTP/1.1 404 Not Found
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Length: 16
-Content-Type: text/plain;charset=UTF-8
-Date: Wed, 14 Jan 2026 14:02:48 GMT
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:51:00 GMT
 Expires: 0
 Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
 Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399369"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399369"
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=9hGc8VP8tT8gNjNERFxL3Ofer3xS4HnOjLQ3smTGY6U%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506660"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=9hGc8VP8tT8gNjNERFxL3Ofer3xS4HnOjLQ3smTGY6U%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506660"
 Server: Heroku
 Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 Vary: Origin
@@ -660,81 +1254,155 @@ Via: 1.1 heroku-router
 X-Content-Type-Options: nosniff
 X-Frame-Options: DENY
 X-Xss-Protection: 0
+Content-Length: 68
 
-Invalid endpoint
+{
+    "message": "skill with idInvalidSkill_999not found",
+    "success": false
+}
+
+--- End of Scenario ---
+
+Request method:	PUT
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/updateSkills/138
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "skillId": 0,
+    "skillName": "UpdatedSkill_eeece787",
+    "creationTime": "2021-10-04T18:14:01.957+00:00",
+    "lastModTime": "2021-10-04T18:14:01.957+00:00"
+}
+Request method:	PUT
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/updateSkills/138
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "skillId": 0,
+    "skillName": "UpdatedSkill_eeece787",
+    "creationTime": "2021-10-04T18:14:01.957+00:00",
+    "lastModTime": "2021-10-04T18:14:01.957+00:00"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:51:01 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Ej3BMFhQo%2FagTgn56jXpdazEMApnOicrQ3iOuWQl4rQ%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506661"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=Ej3BMFhQo%2FagTgn56jXpdazEMApnOicrQ3iOuWQl4rQ%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506661"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Content-Length: 144
+
+{
+    "skillId": 138,
+    "skillName": "UpdatedSkill_eeece787",
+    "creationTime": "2026-01-15T19:50:55.720+00:00",
+    "lastModTime": "2026-01-15T19:51:01.586+00:00"
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json
+Date: Thu, 15 Jan 2026 19:51:01 GMT
+Expires: 0
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma: no-cache
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Ej3BMFhQo%2FagTgn56jXpdazEMApnOicrQ3iOuWQl4rQ%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506661"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=Ej3BMFhQo%2FagTgn56jXpdazEMApnOicrQ3iOuWQl4rQ%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506661"
+Server: Heroku
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 0
+Content-Length: 144
+
+{
+    "skillId": 138,
+    "skillName": "UpdatedSkill_eeece787",
+    "creationTime": "2026-01-15T19:50:55.720+00:00",
+    "lastModTime": "2026-01-15T19:51:01.586+00:00"
+}
+
+--- End of Scenario ---
+
+Request method:	PUT
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/updateSkills/999999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "skillId": 0,
+    "skillName": "UpdatedSkill_f5d42d90",
+    "creationTime": "2021-10-04T18:14:01.957+00:00",
+    "lastModTime": "2021-10-04T18:14:01.957+00:00"
+}
+Request method:	PUT
+Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/updateSkills/999999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg0ODc1NTIsImV4cCI6MTc2ODUxNjM1Mn0.51vjqzhbFdbsjIDJ1PZBegx8gojOpmUh0BmWT8aBubFd1bQUL-c7NW2ixhl60m0clGubXkbvQm3DHeh4O-zp7g
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "skillId": 0,
+    "skillName": "UpdatedSkill_f5d42d90",
+    "creationTime": "2021-10-04T18:14:01.957+00:00",
+    "lastModTime": "2021-10-04T18:14:01.957+00:00"
+}
 HTTP/1.1 404 Not Found
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Length: 16
-Content-Type: text/plain;charset=UTF-8
-Date: Wed, 14 Jan 2026 14:02:48 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399369"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399369"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-
-Invalid endpoint
-
---- End of Scenario ---
-
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch99744",
-    "batchNoOfClasses": 34,
-    "batchStatus": "active",
-    "programId": 73
-}
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch99744",
-    "batchNoOfClasses": 34,
-    "batchStatus": "active",
-    "programId": 73
-}
-HTTP/1.1 400 Bad Request
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:49 GMT
+Date: Thu, 15 Jan 2026 19:51:03 GMT
 Expires: 0
 Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
 Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399369"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399369"
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=xhEN7h8PYiIPXxWpGMx8kKzqDghjOBAc9oJa1GQ5bWo%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506663"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=xhEN7h8PYiIPXxWpGMx8kKzqDghjOBAc9oJa1GQ5bWo%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506663"
 Server: Heroku
 Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 Vary: Origin
@@ -744,21 +1412,21 @@ Via: 1.1 heroku-router
 X-Content-Type-Options: nosniff
 X-Frame-Options: DENY
 X-Xss-Protection: 0
-Content-Length: 88
+Content-Length: 58
 
 {
-    "message": "Batch cannot be created for a Program with Inactive status",
+    "message": "skill with id999999not found",
     "success": false
 }
-HTTP/1.1 400 Bad Request
+HTTP/1.1 404 Not Found
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:49 GMT
+Date: Thu, 15 Jan 2026 19:51:03 GMT
 Expires: 0
 Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
 Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399369"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399369"
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=xhEN7h8PYiIPXxWpGMx8kKzqDghjOBAc9oJa1GQ5bWo%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768506663"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=xhEN7h8PYiIPXxWpGMx8kKzqDghjOBAc9oJa1GQ5bWo%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768506663"
 Server: Heroku
 Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 Vary: Origin
@@ -768,314 +1436,11 @@ Via: 1.1 heroku-router
 X-Content-Type-Options: nosniff
 X-Frame-Options: DENY
 X-Xss-Protection: 0
-Content-Length: 88
+Content-Length: 58
 
 {
-    "message": "Batch cannot be created for a Program with Inactive status",
+    "message": "skill with id999999not found",
     "success": false
-}
-
---- End of Scenario ---
-
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch24682",
-    "batchNoOfClasses": 89,
-    "batchStatus": "active",
-    "programId": 39
-}
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch24682",
-    "batchNoOfClasses": 89,
-    "batchStatus": "active",
-    "programId": 39
-}
-HTTP/1.1 201 Created
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:49 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399369"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399369"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 174
-
-{
-    "batchId": 117,
-    "batchName": "APITeam5Batch24682",
-    "batchDescription": "Team5 Batch Java",
-    "batchStatus": "Active",
-    "batchNoOfClasses": 89,
-    "programId": 39,
-    "programName": "UnitTesting"
-}
-HTTP/1.1 201 Created
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:49 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399369"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=jrvZRL69Ojt8ac2DbrsDmfifna4EISaPPtGaEG2LcZ4%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399369"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 174
-
-{
-    "batchId": 117,
-    "batchName": "APITeam5Batch24682",
-    "batchDescription": "Team5 Batch Java",
-    "batchStatus": "Active",
-    "batchNoOfClasses": 89,
-    "programId": 39,
-    "programName": "UnitTesting"
-}
-
---- End of Scenario ---
-
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch77462",
-    "batchNoOfClasses": 35,
-    "batchStatus": "active",
-    "programId": 39
-}
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch77462",
-    "batchNoOfClasses": 35,
-    "batchStatus": "active",
-    "programId": 39
-}
-HTTP/1.1 201 Created
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:49 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=W%2BzMZ3MledHnZ%2BdVdDFOoeN5PaYsamYtuTtxPSzAPEU%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399370"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=W%2BzMZ3MledHnZ%2BdVdDFOoeN5PaYsamYtuTtxPSzAPEU%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399370"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 174
-
-{
-    "batchId": 118,
-    "batchName": "APITeam5Batch77462",
-    "batchDescription": "Team5 Batch Java",
-    "batchStatus": "Active",
-    "batchNoOfClasses": 35,
-    "programId": 39,
-    "programName": "UnitTesting"
-}
-HTTP/1.1 201 Created
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:49 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=W%2BzMZ3MledHnZ%2BdVdDFOoeN5PaYsamYtuTtxPSzAPEU%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399370"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=W%2BzMZ3MledHnZ%2BdVdDFOoeN5PaYsamYtuTtxPSzAPEU%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399370"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 174
-
-{
-    "batchId": 118,
-    "batchName": "APITeam5Batch77462",
-    "batchDescription": "Team5 Batch Java",
-    "batchStatus": "Active",
-    "batchNoOfClasses": 35,
-    "programId": 39,
-    "programName": "UnitTesting"
-}
-
---- End of Scenario ---
-
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch61272",
-    "batchNoOfClasses": 44,
-    "batchStatus": "active",
-    "programId": 13
-}
-Request method:	POST
-Request URI:	https://lms-hackathon-nov-2025-8dd40899c026.herokuapp.com/lms/batches
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw
-				Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "batchDescription": "Team5 Batch Java",
-    "batchName": "APITeam5Batch61272",
-    "batchNoOfClasses": 44,
-    "batchStatus": "active",
-    "programId": 13
-}
-HTTP/1.1 201 Created
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:50 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=W%2BzMZ3MledHnZ%2BdVdDFOoeN5PaYsamYtuTtxPSzAPEU%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399370"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=W%2BzMZ3MledHnZ%2BdVdDFOoeN5PaYsamYtuTtxPSzAPEU%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399370"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 168
-
-{
-    "batchId": 119,
-    "batchName": "APITeam5Batch61272",
-    "batchDescription": "Team5 Batch Java",
-    "batchStatus": "Active",
-    "batchNoOfClasses": 44,
-    "programId": 13,
-    "programName": "SDET2"
-}
-HTTP/1.1 201 Created
-Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-Content-Type: application/json
-Date: Wed, 14 Jan 2026 14:02:50 GMT
-Expires: 0
-Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
-Pragma: no-cache
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=W%2BzMZ3MledHnZ%2BdVdDFOoeN5PaYsamYtuTtxPSzAPEU%3D\u0026sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add\u0026ts=1768399370"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=W%2BzMZ3MledHnZ%2BdVdDFOoeN5PaYsamYtuTtxPSzAPEU%3D&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&ts=1768399370"
-Server: Heroku
-Strict-Transport-Security: max-age=31536000 ; includeSubDomains
-Vary: Origin
-Vary: Access-Control-Request-Method
-Vary: Access-Control-Request-Headers
-Via: 1.1 heroku-router
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Xss-Protection: 0
-Content-Length: 168
-
-{
-    "batchId": 119,
-    "batchName": "APITeam5Batch61272",
-    "batchDescription": "Team5 Batch Java",
-    "batchStatus": "Active",
-    "batchNoOfClasses": 44,
-    "programId": 13,
-    "programName": "SDET2"
 }
 
 --- End of Scenario ---

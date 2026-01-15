@@ -25,7 +25,7 @@ public class UserModuleSteps2 {
 	public void admin_creates_get_request_with_valid_or_invalid_program_id_for(String Scenario) {
 		
 		// Load data from Excel and populate userPojo + currentRow
-        UserRequest.createUser(Scenario);
+    //    UserRequest.createUser(Scenario);
 
         // Build the final RequestSpecification (headers, body, negative cases logic)
         requestSpec = UserRequest.buildRequest(requestSpec);

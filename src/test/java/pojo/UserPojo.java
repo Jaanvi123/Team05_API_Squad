@@ -172,7 +172,7 @@ public class UserPojo {
 	 //   public String getUserLogin() { 
 	    //	return userLogin; 
 	    	//}
-	    public UserLogin getUserLogin() { return userLogin; }
+//	    public UserLogin getUserLogin() { return userLogin; }
 	    
 	    //Setter Method
 	    
@@ -227,7 +227,7 @@ public class UserPojo {
 	  //  public void setUserLogin(String userLogin) { 
 	    //	this.userLogin = userLogin; 
 	    	//}
-	    public void setUserLogin(UserLogin userLogin) { this.userLogin = userLogin; }
+	  //  public void setUserLogin(UserLogin userLogin) { this.userLogin = userLogin; }
 	}
 
 

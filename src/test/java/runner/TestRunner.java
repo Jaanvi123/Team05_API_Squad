@@ -10,14 +10,14 @@ import io.cucumber.testng.CucumberOptions;
 		        "html:target/cucumber-Reports.html", // HTML report
 		        "json:target/cucumber.json", // JSON report for integrations
 		        "junit:target/Cucumber.xml", // JUnit XML report
-		        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm", // Allure integration
-		        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" // Extent report
+		   //     "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm", // Allure integration
+		  //      "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" // Extent report
 				},
 		monochrome=false,  //console output color
-		features = {"src/test/resources/Feature/05ProgramBatchModule.feature" },
+		features = {"src/test/resources/Feature/08SkillMasterModule.feature" },
 		glue= {"stepDefinitions","Hooks"},
-		dryRun = false,
- 		tags = "@vijitrial"		
+		dryRun = false
+ 	//	tags = "@vijitrial"		
 		
 		)
 

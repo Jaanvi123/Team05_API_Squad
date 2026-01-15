@@ -152,19 +152,19 @@ public class ProgramBatchPayload {
 	            }
 	            
 	            // Create ProgramBatchPojo object
-	            ProgramBatchPojo batch = new ProgramBatchPojo(
-	                batchDescription, 
-	                batchName, 
-	                batchNoOfClasses, 
-	                batchStatus, 
-	                programId
-	            );
+	    //        ProgramBatchPojo batch = new ProgramBatchPojo(
+	    //            batchDescription, 
+	     //           batchName, 
+	      //          batchNoOfClasses, 
+	      //          batchStatus, 
+	      //          programId
+	       //     );
 	            
 	            LOGGER.info("Created batch from Excel: {}", batchName);
 	            
 	            // Prepare return map
 	            Map<String, Object> batchDetails = new HashMap<>();
-	            batchDetails.put("batch", batch);
+	 //           batchDetails.put("batch", batch);
 	            batchDetails.put("currentRow", currentRow);
 	            
 	            // For debugging
