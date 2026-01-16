@@ -8,65 +8,60 @@ import java.util.Map;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import pojo.UserPojo;  // Import the User POJO with inner classes
 import utilities.CommonUtils;
 
+
 public class UserPayload extends CommonUtils {
 
-    public List<Map<String, String>> excelData;
-    private Map<String, String> currentRow;
-    private final Logger LOGGER = LogManager.getLogger(UserPayload.class);
-    String sheetName = "User";  // Changed to User sheet
-
-    public Map<String, Object> getDataFromExcel(String scenario) 
-            throws IOException, ParseException, InvalidFormatException {
-        
-        currentRow = CommonUtils.getCurrentRow(scenario, sheetName);
-      //  Map<String, Object> userDetails = new HashMap<String, Object>();
-        HashMap<String, Object> userDetails = new HashMap<String, Object>();
-        UserPojo userPojo = null;
-
-        if (!scenario.contains("Get")) {
-            // Create User POJO with Excel data
-            userPojo = new UserPojo();
-            
-            // Populate main User fields from Excel
-            userPojo.setUserComments(currentRow.get("userComments"));
-            userPojo.setUserEduPg(currentRow.get("userEduPg"));
-            userPojo.setUserEduUg(currentRow.get("userEduUg"));
-            userPojo.setUserFirstName(currentRow.get("userFirstName"));
-            userPojo.setUserLastName(currentRow.get("userLastName"));
-            userPojo.setUserLinkedinUrl(currentRow.get("userLinkedinUrl"));
-            userPojo.setUserLocation(currentRow.get("userLocation"));
-            userPojo.setUserMiddleName(currentRow.get("userMiddleName"));
-            userPojo.setUserPhoneNumber(currentRow.get("userPhoneNumber"));
-            userPojo.setUserTimeZone(currentRow.get("userTimeZone"));
-            userPojo.setUserVisaStatus(currentRow.get("userVisaStatus"));
-
-            // Handle nested UserRoleMap (if Excel has role data)
-            if (currentRow.containsKey("roleId") && currentRow.containsKey("userRoleStatus")) {
-            	UserPojo.UserRoleMap roleMap = new UserPojo.UserRoleMap();
-                roleMap.setRoleId(currentRow.get("roleId"));
-                roleMap.setUserRoleStatus(currentRow.get("userRoleStatus"));
-                userPojo.setUserRoleMaps(java.util.Arrays.asList(roleMap));
-            }
-
-            // Handle nested UserLogin (if ExceUserPojol has login data)
-            if (currentRow.containsKey("userLoginEmail") && currentRow.containsKey("loginStatus") && currentRow.containsKey("status")) {
-            	UserPojo.UserLogin userLogin = new UserPojo.UserLogin();
-                userLogin.setUserLoginEmail(currentRow.get("userLoginEmail"));
-                userLogin.setLoginStatus(currentRow.get("loginStatus"));
-                userLogin.setStatus(currentRow.get("status"));
-
-         //       userPojo.setUserLogin("userLogin");
-         //       userPojo.setUserLogin(userLogin); 
-
-            }
-        }
-
-        LOGGER.info("Read User details from Excel file: " + userPojo);
-        userDetails.put("userPojo", userPojo);
-        userDetails.put("currentRow", currentRow);
-        return userDetails;
-    }
+	private static final Logger LOGGER = LogManager.getLogger(UserPayload.class);
+	public Map<String, Object> getDataFromExcel(String scenario)
+	        throws IOException, ParseException, InvalidFormatException {
+	    Map<String, Object> userDetails = new HashMap<>();
+	    currentRow = CommonUtils.getCurrentRow(scenario, "User");
+	    if (currentRow == null || currentRow.isEmpty()) {
+	        LOGGER.warn("No data found in Excel for scenario: " + scenario);
+	        return userDetails;
+	    }
+	    UserPojo userPojo = new UserPojo();
+	    // Basic fields
+	    userPojo.setUserComments(currentRow.get("userComments"));
+	    userPojo.setUserEduPg(currentRow.get("userEduPg"));
+	    userPojo.setUserEduUg(currentRow.get("userEduUg"));
+	    userPojo.setUserFirstName(currentRow.get("userFirstName"));
+	    userPojo.setUserLastName(currentRow.get("userLastName"));
+	    userPojo.setUserLinkedinUrl(currentRow.get("userLinkedinUrl"));
+	    userPojo.setUserLocation(currentRow.get("userLocation"));
+	    userPojo.setUserMiddleName(currentRow.get("userMiddleName"));
+	    userPojo.setUserPhoneNumber(currentRow.get("userPhoneNumber"));
+	    userPojo.setUserTimeZone(currentRow.get("userTimeZone"));
+	    userPojo.setUserVisaStatus(currentRow.get("userVisaStatus"));
+	    // Parse userRoleMaps JSON
+	    String roleJson = currentRow.get("userRoleMaps");
+	    if (roleJson != null && !roleJson.trim().isEmpty()) {
+	        try {
+	            ObjectMapper mapper = new ObjectMapper();
+	            List<UserPojo.UserRoleMap> roles = mapper.readValue(
+	                roleJson, new com.fasterxml.jackson.core.type.TypeReference<List<UserPojo.UserRoleMap>>() {});
+	            userPojo.setUserRoleMaps(roles);
+	        } catch (Exception e) {
+	            LOGGER.error("Failed to parse userRoleMaps JSON for scenario: " + scenario, e);
+	        }
+	    }
+	    // Parse userLogin JSON
+	    String loginJson = currentRow.get("userLogin");
+	    if (loginJson != null && !loginJson.trim().isEmpty()) {
+	        try {
+	            UserPojo.UserLogin userLogin = new UserPojo.UserLogin(loginJson);
+	            userPojo.setUserLogin(userLogin);
+	        } catch (Exception e) {
+	            LOGGER.error("Failed to parse userLogin JSON for scenario: " + scenario, e);
+	        }
+	    }
+	    LOGGER.info("Read User details from Excel file for scenario '{}': {}", scenario, userPojo);
+	    userDetails.put("userPojo", userPojo);
+	    userDetails.put("currentRow", currentRow);
+	    return userDetails;
+	}
 }

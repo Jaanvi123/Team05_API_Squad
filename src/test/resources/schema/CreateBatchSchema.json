@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Batch",
+  "description": "Schema for batch information",
+  "type": "object",
+  "properties": {
+    "batchId": {
+      "type": "integer",
+      "description": "Unique identifier for the batch",
+      "minimum": 1
+    },
+    "batchName": {
+      "type": "string",
+      "description": "Name of the batch",
+      "minLength": 1
+    },
+    "batchDescription": {
+      "type": "string",
+      "description": "Description of the batch"
+    },
+    "batchStatus": {
+      "type": "string",
+      "description": "Status of the batch",
+      "enum": ["Active", "Inactive", "Completed", "Cancelled", "Pending"]
+    },
+    "batchNoOfClasses": {
+      "type": "integer",
+      "description": "Total number of classes in the batch",
+      "minimum": 0
+    },
+    "programId": {
+      "type": "integer",
+      "description": "Unique identifier for the program",
+      "minimum": 1
+    },
+    "programName": {
+      "type": "string",
+      "description": "Name of the program",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "batchId",
+    "batchName",
+    "batchStatus",
+    "batchNoOfClasses",
+    "programId",
+    "programName"
+  ],
+  "additionalProperties": false
+}
+
+
+
+
+
+
+

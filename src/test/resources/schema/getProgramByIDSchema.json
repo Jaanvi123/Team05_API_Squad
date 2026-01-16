@@ -3,14 +3,13 @@
   "type": "object",
   "properties": {
     "programId": {
-      "type": "integer",
-      "minimum": 0
+      "type": "integer"
     },
     "programName": {
       "type": "string"
     },
     "programDescription": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "programStatus": {
       "type": "string"
@@ -24,16 +23,8 @@
       "format": "date-time"
     }
   },
-  "required": [
-    "programId",
-    "programName",
-    "programStatus",
-    "creationTime",
-    "lastModTime"
-  ],
-  "additionalProperties": false
+  "required": ["programId", "programName", "programStatus", "creationTime", "lastModTime"]
 }
-
 
 
 

@@ -21,110 +21,78 @@ import utilities.CommonUtils;
 import utilities.TokenManager;
 
 public class UserRequest extends CommonUtils {
-	    private List<Map<String, String>> excelData;
-	    private Map<String, String> currentRow;
-	    private Response response;
-	    private UserPojo userPojo;
-	    private static final String INVALID_PROGRAM_ID = "goi";
-		private static final int INVALID_PROGRAM_NAME = 4567;
-		private static final String INVALID_TOKEN = "jbnsjokfi";
-	    
-
-		
+	/private List<Map<String, String>> excelData;
 	
-			
-		
-		public RequestSpecification setAuth() {
-			RestAssured.baseURI = CommonUtils.endpoints.getString("baseUrl");
-			TokenManager.setToken("");
-			return given()
-					.header("Authorization", "Bearer " + TokenManager.getToken());
-		}
-
-		public  void createUser(String scenario) 
-				throws IOException, InvalidFormatException, ParseException {
-
-			Map<String, Object> UserDetails = new UserPayload().getDataFromExcel(scenario);
-			if(UserDetails != null) {
-				if(UserDetails.get("userPojo") != null) {
-					this.userPojo = (UserPojo) UserDetails.get("userPojo");
-				}
-				if(UserDetails.get("currentRow") != null) {
-					this.currentRow =  (Map<String, String>) UserDetails.get("currentRow");
-				}
-			}
-		}  
-	    
-		public RequestSpecification buildRequest(RequestSpecification requestSpec) {
-			if (requestSpec == null) {
-				throw new IllegalStateException("RequestSpecification is not initialized.");
-			}
-			
-			if (currentRow == null) { throw new IllegalStateException("currentRow is null. Did you forget to call createUser(scenario)?"); }
-			String scenarioName = currentRow.get("ScenarioName");
-			if(scenarioName.contains("NoAuth")) {
-				requestSpec = given();
-			}
-			else if(scenarioName.contains("InvalidToken")) {
-				requestSpec = given()
-						.header("Authorization", "Bearer " + INVALID_TOKEN);
-			}
-			else if(scenarioName.contains("InvalidBaseURI")) {
-				RestAssured.baseURI = CommonUtils.endpoints.getString("invalidBaseUrl");
-				return given()
-						.header("Authorization", "Bearer " + TokenManager.getToken());
-			}
-
-			// Set content type from currentRow
-			requestSpec.contentType(currentRow.get("ContentType"));
-			// Conditionally add the request body
-			if (!scenarioName.contains("WithoutRequestBody")
-					&& !scenarioName.contains("Post")
-					&& !scenarioName.contains("Put")
-					&& !scenarioName.contains("Get")
-					&& !scenarioName.contains("Delete")
-					) 
-			{
-				requestSpec.body(userPojo);
-			}
-			return requestSpec;
-		}
-		
-	    
-		public Response sendRequest(RequestSpecification requestSpec) {
-
-			String endpoint = currentRow.get("EndPoint");
-			response = CommonUtils.getResponse(requestSpec,endpoint);
-			return response;
-		}
-
-		public int getStatusCode() {
-			String expectedStatusCodeString = currentRow.get("StatusCode");
-			int expectedStatusCode = (int) Double.parseDouble(expectedStatusCodeString); // Convert "201.0" to 201
-			return expectedStatusCode;
-		}
-
-		public String getStatusText() {
-			String scenarioName = currentRow.get("ScenarioName");
-			if(!scenarioName.equalsIgnoreCase("Invalid Endpoint")&&
-					(!scenarioName.equalsIgnoreCase("Mandatory"))
-					&&(!scenarioName.equalsIgnoreCase("Full Details")))
-			{
-				String expectedStatusText = currentRow.get("StatusText");
-				return expectedStatusText;
-			}
-			else
-			{
-				return null;
-			}
-		}
-		
-		public void saveResponseBody(Response response) {
-			String userId = response.jsonPath().getString("userId");
-			Commons.setuserId(userId);
-//			JSONschema response is same for both post and put requests
-//			String schemaPath = config.getString("createProgramSchemaPath");
-//			CommonUtils.validateResponseSchema(response,schemaPath);
-		}
-		
+    private Map<String, String> currentRow;
+    private Response response;
+    private UserPojo userPojo;
+    private static final String INVALID_TOKEN = "jbnsjokfi";
+    // ---------------- AUTH ----------------
+    public RequestSpecification setAuth() {
+        RestAssured.baseURI = CommonUtils.endpoints.getString("baseUrl");
+        TokenManager.setToken("");
+        return given()
+                .header("Authorization", "Bearer " + TokenManager.getToken());
+    }
+    // ---------------- LOAD USER FROM EXCEL ----------------
+    public void createUser(String scenario)
+            throws IOException, InvalidFormatException, ParseException {
+        Map<String, Object> userDetails = new UserPayload().getDataFromExcel(scenario);
+        if (userDetails != null) {
+            this.userPojo = (UserPojo) userDetails.get("userPojo");
+            this.currentRow = (Map<String, String>) userDetails.get("currentRow");
+        }
+    }
+    // ---------------- BUILD REQUEST ----------------
+    public RequestSpecification buildRequest(RequestSpecification requestSpec) {
+        if (requestSpec == null)
+            throw new IllegalStateException("RequestSpecification is not initialized.");
+        if (currentRow == null)
+            throw new IllegalStateException("currentRow is null. Did you forget to call createUser()?");
+        String scenarioName = currentRow.get("ScenarioName");
+        // AUTH variations
+        if (scenarioName.contains("NoAuth")) {
+            requestSpec = given();
+        } else if (scenarioName.contains("InvalidToken")) {
+            requestSpec = given()
+                    .header("Authorization", "Bearer " + INVALID_TOKEN);
+        } else if (scenarioName.contains("InvalidBaseURI")) {
+            RestAssured.baseURI = CommonUtils.endpoints.getString("invalidBaseUrl");
+            requestSpec = given()
+                    .header("Authorization", "Bearer " + TokenManager.getToken());
+        }
+        // Always set content type for LMS POST
+        requestSpec.contentType(currentRow.get("ContentType"));
+        // LMS RULE: POST must ALWAYS have a body
+        boolean isPost = currentRow.get("Method").equalsIgnoreCase("POST");
+        if (isPost && !scenarioName.contains("WithoutRequestBody")) {
+            requestSpec.body(userPojo);
+        }
+        return requestSpec;
+    }
+    // ---------------- SEND REQUEST ----------------
+    public Response sendRequest(RequestSpecification requestSpec) {
+        String endpoint = currentRow.get("EndPoint");
+        response = CommonUtils.getResponse(requestSpec, endpoint);
+        return response;
+    }
+    // ---------------- STATUS CODE ----------------
+    public int getStatusCode() {
+        return (int) Double.parseDouble(currentRow.get("StatusCode"));
+    }
+    // ---------------- STATUS TEXT ----------------
+    public String getStatusText() {
+        String scenarioName = currentRow.get("ScenarioName");
+        if (scenarioName.equalsIgnoreCase("Invalid Endpoint")
+                || scenarioName.equalsIgnoreCase("Mandatory")
+                || scenarioName.equalsIgnoreCase("Full Details")) {
+            return null;
+        }
+        return currentRow.get("StatusText");
+    }
+    // ---------------- SAVE RESPONSE ----------------
+    public void saveResponseBody(Response response) {
+        String userId = response.jsonPath().getString("userId");
+        Commons.setuserId(userId);
+    }
 }

@@ -2,7 +2,7 @@ package commons;
 
 public class Commons {
 	
-	private static int programId = 13;
+	private static int programId  ;
 	private static String programName;
 	private static float batchId;
 	private static String batchName;
@@ -13,7 +13,7 @@ public class Commons {
 	}
 	public static void setProgramId(int programId) {
 		Commons.programId = programId;
-	}
+	}  
 	public static String getProgramName() {
 		return programName;
 	}

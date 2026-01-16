@@ -19,8 +19,16 @@ public class ProgramBatchPojo {
     @JsonProperty("batchStatus")
     private String batchStatus;
     @JsonProperty("programId")
-    private int programId;   
+    private int programId;
+    
+    
+}
+
+
+
+
+
     
    
 
-}
+

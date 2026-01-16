@@ -5,6 +5,7 @@ import org.testng.annotations.DataProvider;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
+
 @CucumberOptions(
 		plugin = { "pretty", // Enhanced readable console logs
 		        "html:target/cucumber-Reports.html", // HTML report
@@ -14,11 +15,11 @@ import io.cucumber.testng.CucumberOptions;
 		        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" // Extent report
 				},
 		monochrome=false,  //console output color
-		features = {"src/test/resources/Feature/08SkillMasterModule.feature" },
-		glue= {"stepDefinitions","Hooks"},
+		features = {"src/test/resources/Feature/" },
+		glue= {"stepDefinitions"},
+	//	tags = "@post",
 		dryRun = false
- 	//	tags = "@vijitrial"		
-		
+ 				
 		)
 
 public class TestRunner extends AbstractTestNGCucumberTests{

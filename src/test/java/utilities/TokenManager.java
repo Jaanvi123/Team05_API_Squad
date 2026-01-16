@@ -3,16 +3,27 @@ package utilities;
 public class TokenManager {
 	
 	private static String token;
+	private static String userId;
+
 
 	// Method to set the token
 	public static void setToken(String generatedToken) {
 		token = generatedToken;
 	}
-
+	   public static String getToken() {
+	        if (token == null || token.isEmpty()) {
+	            // Optional: default token from team5 for testing
+	            token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZWFtNUBnbWFpbC5jb20iLCJpYXQiOjE3NjgzOTkyODYsImV4cCI6MTc2ODQyODA4Nn0.uNz099lY0MWRkorogrtwWwucp9WzC_D84Vgnjh4a-SLxiDzgE425KohuPVWo5cwxYC7AH224CNQ2UCDNDtC6Kw";
+	        }
+	        return token;
+	    }
 	// Method to get the token
-	public static String getToken() {
-		token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyb2JpbnJhbmphbkBnbWFpbC5jb20iLCJpYXQiOjE3Njg1MTY5ODMsImV4cCI6MTc2ODU0NTc4M30.7VHGOXnx82czXE0npPuKxl9bDEe3b41Cipuj4O2WCo_uyzZZnaYwyZjUKUyLNYu82DQAaHKyAEuDL43djygXow";
-		return token;
-	}
+
+	public static void setUserId(String newUserId) {
+        userId = newUserId;
+    }
+    public static String getUserId() {
+        return userId;
+    }
 
 }

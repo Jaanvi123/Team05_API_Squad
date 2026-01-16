@@ -21,7 +21,6 @@ Feature: User Module1 [Post Operation]
         #| Post_NoAuth                   |
         #| Post_Without_RequestBody      |
  
- 
 
 @GetallUsers
 Scenario Outline: Check if admin able to retrieve all users with valid/invalid Endpoints

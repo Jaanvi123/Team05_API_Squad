@@ -17,8 +17,7 @@ public class ProgramPayload extends CommonUtils {
 	private Map<String, String> currentRow;
 	private  final Logger LOGGER = LogManager.getLogger(ProgramPayload.class);
 	String sheetName="Program";
-
-	public Map<String, Object> getDataFromExcel(String scenario) 
+	public Map<String, Object> getDataFromExcel(String scenario)
 			throws IOException, ParseException, InvalidFormatException {
 		currentRow = CommonUtils.getCurrentRow(scenario,sheetName);
 		Map<String, Object> programDetails = new  HashMap<String, Object>();
@@ -30,7 +29,5 @@ public class ProgramPayload extends CommonUtils {
 		programDetails.put("programPojo", programPojo);
 		programDetails.put("currentRow", currentRow);
 		return programDetails;
-
 	}
-
 }

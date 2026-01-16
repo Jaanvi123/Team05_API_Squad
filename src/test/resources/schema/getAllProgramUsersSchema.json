@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "programId": {
+          "type": "integer"
+        },
+        "programName": {
+          "type": "string"
+        },
+        "programDescription": {
+          "type": "string"
+        },
+        "programStatus": {
+          "type": "string"
+        },
+        "programUsers": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "userId": {
+                  "type": "string"
+                },
+                "userFirstName": {
+                  "type": "string"
+                },
+                "userLastName": {
+                  "type": "string"
+                },
+                "userMiddleName": {
+                  "type": "string"
+                },
+                "userPhoneNumber": {
+                  "type": "string"
+                },
+                "userLocation": {
+                  "type": "string"
+                },
+                "userTimeZone": {
+                  "type": "string"
+                },
+                "userLinkedinUrl": {
+                  "type": "string"
+                },
+                "userEduUg": {
+                  "type": "string"
+                },
+                "userEduPg": {
+                  "type": "null"
+                },
+                "userComments": {
+                  "type": "string"
+                },
+                "userVisaStatus": {
+                  "type": "string"
+                },
+                "userLoginEmail": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "userId",
+                "userFirstName",
+                "userLastName",
+                "userMiddleName",
+                "userPhoneNumber",
+                "userLocation",
+                "userTimeZone",
+                "userLinkedinUrl",
+                "userEduUg",
+                "userEduPg",
+                "userComments",
+                "userVisaStatus",
+                "userLoginEmail"
+              ]
+            }
+          ]
+        },
+        "creationTime": {
+          "type": "string"
+        },
+        "lastModTime": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "programId",
+        "programName",
+        "programDescription",
+        "programStatus",
+        "programUsers",
+        "creationTime",
+        "lastModTime"
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
